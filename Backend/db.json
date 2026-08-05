@@ -6,7 +6,40 @@
       "password": "ashik123",
       "confirm": "ashik123",
       "cart": [],
-      "wishlist": [],
+      "wishlist": [
+        {
+          "id": "1",
+          "title": "Atomic Habits",
+          "author": "James Clear",
+          "publisher": "Penguin Random House",
+          "category": "Self Help",
+          "price": 309,
+          "rating": 4.8,
+          "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg",
+          "description": "Atomic Habits by James Clear.",
+          "stock": 21,
+          "featured": true,
+          "trending": true,
+          "releaseDate": "2018-10-16",
+          "isbn": "9780735211292"
+        },
+        {
+          "id": "5",
+          "title": "The Psychology of Money",
+          "author": "Morgan Housel",
+          "publisher": "Penguin Random House",
+          "category": "Finance",
+          "price": 349,
+          "rating": 4.9,
+          "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg",
+          "description": "The Psychology of Money by Morgan Housel.",
+          "stock": 25,
+          "featured": true,
+          "trending": true,
+          "releaseDate": "2020-09-08",
+          "isbn": "9780857197689"
+        }
+      ],
       "orders": [],
       "address": {},
       "id": "WTVLUFB5t5E"

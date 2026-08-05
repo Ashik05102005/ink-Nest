@@ -4,13 +4,18 @@ import './index.css'
 import App from './App.jsx'
 import { QueryClient, QueryClientContext, QueryClientProvider } from '@tanstack/react-query'
 import { Toaster } from 'sonner'
+import { Provider } from 'react-redux'
+import store from './redux/store.js'
 
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <App />
+    <Provider store={store}>
+      <QueryClientProvider client={queryClient}>
+        <App />
+      </QueryClientProvider>
+    </Provider>
       <Toaster
       position="top-right"
       theme="light"
@@ -24,6 +29,5 @@ createRoot(document.getElementById('root')).render(
       padding:"16px",
       fontSize:"15px"
       }}}/>
-    </QueryClientProvider>
   </StrictMode>,
 )

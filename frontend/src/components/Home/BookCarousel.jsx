@@ -10,7 +10,7 @@ function BookCarousel() {
     },
     [
         Autoplay({
-            delay:3000,
+            delay:4000,
             stopOnInteraction: false
             
         })
@@ -42,6 +42,7 @@ function BookCarousel() {
                         <div
                         key={book.id}
                         className='basis-1/3
+                        
                         shrink-0
                         flex
                         justify-center
@@ -50,12 +51,12 @@ function BookCarousel() {
                                 alt={book.title}
                                 className={`h-[480px] object-contain transition-all duration-700 ease-out 
                                 ${
-                                    active ? "scale-180 z-30"
-                                           : "scale-90 opacity-50"
+                                    active ? "scale-200 z-30"
+                                           : "scale-120 opacity-50"
                                 }`}
                                 style={{
                                     transform : active 
-                                    ? "prespective(1200px) rotateY(0deg) scale(1.1)"
+                                    ? "prespective(1200px) rotateY(0deg) scale(1.2) "
                                     : index < selected 
                                     ? "prespective(1200px) rotateY(30deg) scale(0.75)"
                                     : "prespective(1200px) rotateY(-30deg) scale(0.75)" ,

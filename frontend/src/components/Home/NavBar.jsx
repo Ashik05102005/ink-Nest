@@ -5,12 +5,14 @@ import { TiShoppingCart } from "react-icons/ti";
 import { GrFavorite } from "react-icons/gr";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
+import LoginComponent from "../buttons/LoginComponent";
+
 
 
 export default function NavBar() {
   return (
     <div className="bg-white/10 backdrop-blur-lg fixed max-w-full min-w-full z-100 ">
-      <div className='  shadow-2xl  max-h-20 flex items-center justify-between px-8  z-50 max-w-full  min-w-full '>
+      <div className='  shadow  max-h-20 flex items-center justify-between px-8  z-50 max-w-full  min-w-full '>
         <div className='h-20  flex items-center '>
           <h1 className="text-3xl">Ink<span className="text-[#1D7A46]">Nest</span></h1>
         </div>
@@ -36,9 +38,9 @@ export default function NavBar() {
           <button className=' px-2 py-2 rounded-xl '>
             <GrFavorite />
           </button>
-          <button className=' px-2 py-2 rounded-xl '>
-            <CiLogin />
-          </button>
+          <div className=' px-2 py-2  '>
+            <LoginComponent />
+          </div>
         </div>
       </div>
        

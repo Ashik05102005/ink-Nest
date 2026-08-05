@@ -52,7 +52,7 @@ function CustomerReview() {
       }
     ];
   return (
-    <div className='min-h-50 my-5  pl-3 lg:pl-8 '>
+    <div className='min-h-50 my-5  px-3 lg:px-8 '>
       <div className='flex justify-between pr-3 lg:pr-8 py-3 mb-3'>
         <div>
           <h1 className='text-4xl font-bold'>Don't just take our word for it </h1>
@@ -71,13 +71,13 @@ function CustomerReview() {
               <img 
               className='w-full h-full object-cover shrink-0'
               src={item.image}></img>
-              <div className='absolute bottom-3 flex flex-col m-2 border bg-white/20 backdrop-blur-xl border-white/60 p-4 text-white rounded-2xl'>
+              <div className='absolute bottom-3 flex flex-col m-2  bg-white/20 backdrop-brightness-80   p-4 text-white rounded-2xl'>
                   <span className='flex items-center gap-1'>
                     {item.rating}
-                    <FaStar />
+                    <FaStar  className='text-yellow-300'/>
                   </span>
                   <span >"{item.review}"</span>
-                  <span>{item.name}</span>
+                  <span className='mt-1'>- {item.name}</span>
               </div>
             </div>
             

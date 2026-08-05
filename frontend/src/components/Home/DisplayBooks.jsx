@@ -1,6 +1,8 @@
 import React from 'react'
 import { CiHeart } from 'react-icons/ci'
 import { FaStar } from "react-icons/fa6";
+import WishlistIcon from '../buttons/WishlistIcon';
+import CartButton from '../buttons/CartButton';
 
 
 function DisplayBooks({data}) {
@@ -16,14 +18,14 @@ function DisplayBooks({data}) {
                     src={book.image}></img>
                     <div className='flex flex-col p-2 h-full justify-around w-full'>
                         <div className=' flex flex-col gap-3 h-fit '>
-                            <div className='text-2xl flex justify-end'><CiHeart /></div>
+                            <div className='text-2xl flex justify-end'><WishlistIcon book={book} /></div>
                             <h1 className='text-xl font-semibold '>{book.title}</h1>
                             <p className='text-gray-500 flex items-center gap-2'><FaStar className='text-yellow-400'/>{book?.rating}</p>
                             <p className='font-bold text-gray-800 '>Rs {book.price}</p>
                         </div>
                         <div className='flex flex-col gap-2 mt-2'>
                         <button className='border px-2 py-1 rounded bg-[#1D7A46] text-gray-50'>Buy</button>
-                        <button className='border px-2 py-1 rounded text-[#1D7A46]'>Add To Cart</button>
+                        <CartButton />
                         </div>
                     </div>
                 </div>
