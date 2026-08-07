@@ -11,7 +11,10 @@ function FilterSidebar({setSelectedCatagory,selectedCatagory ,maxPrice ,setMaxPr
                         "Programming",
                         "Others"
                         ];
-    
+    const clearHandler =()=>{
+        setMaxPrice(1000);
+        setSelectedCatagory("All")
+    }
 
   return (
     <div className='min-h-100 bg-white rounded-xl shadow-md p-3'>
@@ -59,6 +62,12 @@ function FilterSidebar({setSelectedCatagory,selectedCatagory ,maxPrice ,setMaxPr
             <div className="flex justify-between text-sm text-gray-500">
                 <span>₹0</span>
                 <span>₹{maxPrice}</span>
+            </div>
+            <div className='mt-5'>
+                <button
+                className='border w-full py-2 border-[#1D7A46] text-[#1D7A46] rounded-md '
+                onClick={clearHandler}
+                >Clear All</button>
             </div>
         </div>
     </div>
