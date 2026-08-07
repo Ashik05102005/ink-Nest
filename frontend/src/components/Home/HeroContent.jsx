@@ -1,5 +1,7 @@
 import React from 'react'
 import { MdOutlineStar } from "react-icons/md";
+import { Link } from 'react-router-dom';
+
 
 
 function HeroContent() {
@@ -15,7 +17,9 @@ function HeroContent() {
                 Find your next favourate read and enrich your life
             </p>
             <div className='mt-4 flex gap-3'>
-                <button className='border px-2 py-2 lg:px-4 lg:text-xl text-sm font-medium rounded-md bg-[#0F8A43] hover:bg-[#0A6B34] text-white '>Explore Books</button>
+                <Link 
+                to={'/products'}
+                className='border px-2 py-2 lg:px-4 lg:text-xl text-sm font-medium rounded-md bg-[#0F8A43] hover:bg-[#0A6B34] text-white '>Explore Books</Link>
                 <button className=' px-2 py-2 lg:px-4 lg:text-xl text-sm font-medium rounded-md bg-white border border-[#D9D9D9] text-[#1F2937] hover:bg-gray-100'>Browse categories</button>
             </div>
             <div className='flex mt-6 gap-3 overflow-x-visible  w-fit'>

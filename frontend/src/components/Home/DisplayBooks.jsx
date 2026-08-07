@@ -25,7 +25,7 @@ function DisplayBooks({data}) {
                         </div>
                         <div className='flex flex-col gap-2 mt-2'>
                         <button className='border px-2 py-1 rounded bg-[#1D7A46] text-gray-50'>Buy</button>
-                        <CartButton />
+                        <CartButton book={book}/>
                         </div>
                     </div>
                 </div>
