@@ -47,11 +47,7 @@ function Carousel() {
                 
             </div>
         </div>
-            <button 
-            className='absolute bottom-1/6 right-1/12 lg:right-20 bg-[#1D7A46] border border-white/20 backdrop-blur-sm   px-4 py-2 rounded md:text-xl font-bold text-white'
-            >
-                Order Now
-            </button> 
+           
         
     </div>
   )

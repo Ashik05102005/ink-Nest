@@ -1,0 +1,14 @@
+import React from 'react'
+import {Navigate } from "react-router-dom"
+
+function ProtectedRoute({children}) {
+    const userid = JSON.parse(localStorage.getItem("userId"));
+
+    if(!userid) {
+        return <Navigate to="/login" />
+    }
+
+    return children
+}
+
+export default ProtectedRoute

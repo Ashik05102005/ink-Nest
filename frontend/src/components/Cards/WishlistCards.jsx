@@ -6,14 +6,16 @@ import { FaStar } from "react-icons/fa";
 import {useCurrentUser} from "../../hooks/useCurrentUser"
 import { useDispatch } from 'react-redux';
 import {setCurrentUser} from '../../redux/slices/currentUserSlice'
-import { addWishlist } from '../../redux/slices/wishlistSlice';
+import { addWishlist, removeWishlist } from '../../redux/slices/wishlistSlice';
+import { useNavigate } from 'react-router-dom';
 
 
 function WishlistCards({book}) {
-   
+  
 
   return (
     <div
+    
     key={book.id}
     className=' min-h-20 md:w-4/6 flex shadow-md rounded-xl bg-white'
     >
@@ -36,7 +38,9 @@ function WishlistCards({book}) {
             <div className='flex flex-col justify-end  px-3 pb-2 gap-3 w-50 lg:w-70'>
                 <div className='flex justify-between items-center'>
                     <span className='text-xl font-medium'>Rs {book.price}</span>
-                    <RiDeleteBin6Line className='border w-7 h-7 p-1 rounded text-rose-500'/>
+                    <RiDeleteBin6Line 
+                    onClick={()=>dispatch(removeWishlist(book.id))}
+                    className='border w-7 h-7 p-1 rounded text-rose-500'/>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <button className='border py-1 rounded text-white bg-[#1D7A46] '>Buy Now</button>

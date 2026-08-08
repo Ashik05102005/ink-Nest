@@ -23,7 +23,7 @@ function LoginComponent() {
       userId
       ?<button 
         onClick={LogoutHandler}
-        className='flex items-center gap-2  px-2 py-1 rounded text-emerald-50 bg-[#1D7A46]'><CiLogout /> Logout</button>
+        className='flex items-center gap-2  px-2 py-1 rounded text-emerald-50 bg-[#1D7A46]'><CiLogout /> <span className='hidden sm:block'>Logout</span></button>
       :<button
         onClick={LoginHandler}
         className='flex items-center gap-2  px-2 py-1 rounded text-emerald-50 bg-[#1D7A46]'><CiLogin /> Login</button>

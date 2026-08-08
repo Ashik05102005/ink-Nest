@@ -8,6 +8,8 @@ import { CiSearch } from "react-icons/ci";
 import LoginComponent from "../buttons/LoginComponent";
 import { Link } from "react-router-dom";
 import SearchComponent from "../Products/SearchComponent";
+import WishlistButtonNavbar from "../Navbar/WishlistButtonNavbar";
+import CartNavbarButton from "../Navbar/CartNavbarButton";
 
 
 export default function NavBar() {
@@ -19,20 +21,18 @@ export default function NavBar() {
           to={'/'}
           className="text-3xl">Ink<span className="text-[#1D7A46]">Nest</span></Link>
         </div>
-        <div className="text-sm  gap-4 hidden lg:flex">
-          <span>Home</span>
-          <span>categories</span>
-          <span>Best Sellers</span>
-          <span>New Arrivals</span>
-          <span>Authors</span>
+        <div className="text-sm  gap-4  flex">
+          <Link to={'/'}>Home</Link>
+          <Link to={'/products'} >Products</Link>
+          <Link to={'/orders'}>Orders</Link>
         </div>
         
          <div className=' flex gap-2'>
           <button className=' px-2 py-2 rounded-xl '>
-            <Link to={'/cart'}> <TiShoppingCart /> </Link>
+            <Link to={'/cart'}> <CartNavbarButton /> </Link>
           </button>
           <button className=' px-2 py-2 rounded-xl '>
-            <Link to={'/wishlist'}><GrFavorite /></Link>
+            <Link to={'/wishlist'}><WishlistButtonNavbar /></Link>
           </button>
           <div className=' px-2 py-2  '>
             <LoginComponent />

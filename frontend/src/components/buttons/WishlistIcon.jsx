@@ -13,7 +13,8 @@ function WishlistIcon({book}) {
   const currentUser = useSelector(state=>state.currentUser.currentUser);
   
   
-  const handleAddWishlist = ()=>{
+  const handleAddWishlist = (e)=>{
+    e.stopPropagation();
     dispatch(addWishlist(book))
     
     const updatedWishList = [...wishlist , book];
@@ -28,7 +29,7 @@ function WishlistIcon({book}) {
 
 
   }
-  const handleRemoveWishlist = ()=>{
+   const handleRemoveWishlist = ()=>{
     dispatch(removeWishlist(book.id))
 
     const updatedWishList = wishlist.filter(

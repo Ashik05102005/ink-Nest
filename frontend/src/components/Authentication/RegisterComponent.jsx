@@ -13,7 +13,7 @@ import { checkEmail } from '../../services/api/authenticationApi';
 
 
 const INITIALSTATE ={name:'',email:'',password:'',confirm:''}
-const ADDITIONALDATA = {cart : [] , wishlist : [] , orders : [] , address : {}}
+const ADDITIONALDATA = {cart : [] , wishlist : [] , orders : [] , address : [] }
 
 function RegisterComponent({isLogin , setIsLogin}) {
 
@@ -38,8 +38,17 @@ function RegisterComponent({isLogin , setIsLogin}) {
         }
         setErrors({});
         
-        createUser.mutate({...result.data , ...ADDITIONALDATA })
-        navigate('/')
+        createUser.mutate(
+            {...result.data , ...ADDITIONALDATA },
+            {
+                onSuccess : (newUser)=>{
+                console.log(newUser);
+                localStorage.setItem("userId",JSON.stringify(newUser.data.id));
+                navigate('/')
+            }
+        }
+        )
+       
     }
 
 

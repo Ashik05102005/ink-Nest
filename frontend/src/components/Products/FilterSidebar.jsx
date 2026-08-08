@@ -8,8 +8,7 @@ function FilterSidebar({setSelectedCatagory,selectedCatagory ,maxPrice ,setMaxPr
                         "Finance",
                         "Fiction",
                         "Business",
-                        "Programming",
-                        "Others"
+                        "Programming"
                         ];
     const clearHandler =()=>{
         setMaxPrice(1000);

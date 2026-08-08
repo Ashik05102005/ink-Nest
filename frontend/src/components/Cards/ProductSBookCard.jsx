@@ -2,12 +2,16 @@ import React from 'react'
 import CartButton from '../buttons/CartButton'
 import WishlistIcon from '../buttons/WishlistIcon'
 import { FaStar } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 
 function ProductSBookCard({book}) {
     // console.log(book)
+    const navigate =  useNavigate();
   return (
-    <div className='shadow min-h-20  max-h-125 p-3 rounded bg-white flex  gap-4 sm:gap-2 sm:flex-col'>
+    <div 
+    onClick={()=>navigate(`/books/${book.id}`)}
+    className='shadow min-h-20  max-h-125 p-3 rounded bg-white flex  gap-4 sm:gap-2 sm:flex-col'>
         <div className="flex justify-center">
             <img 
             className='h-50 rounded-md object-cover'

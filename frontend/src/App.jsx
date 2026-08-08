@@ -5,6 +5,11 @@ import Login from "./pages/Login"
 import Wishlist from "./pages/wishlist"
 import Cart from "./pages/Cart"
 import Products from "./pages/Products"
+import ProductView from "./components/Products/productView"
+import CheckOut from "./pages/CheckOut"
+import Confirm from "./pages/Confirm"
+import Orders from "./pages/Orders"
+import ProtectedRoute from "./routes/protectedRoute"
 
 function App() {
   
@@ -14,10 +19,16 @@ function App() {
         <BrowserRouter >
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login/" element={<Login />} />
-            <Route path="/wishlist" element={<Wishlist />}/>
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/wishlist" element={<ProtectedRoute><Wishlist /></ProtectedRoute>}/>
+            <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
             <Route path="/products" element={<Products />} />
+            <Route path='/books/:id' element={<ProductView />} />
+            <Route path="/checkout" element={<ProtectedRoute><CheckOut /></ProtectedRoute>} />
+            <Route path="/confirm/:id" element={<ProtectedRoute ><Confirm /></ProtectedRoute>} />
+            <Route path="/orders" element={<Orders />} />
+            
+
           </Routes>
         </BrowserRouter>
         

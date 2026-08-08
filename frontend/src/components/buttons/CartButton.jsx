@@ -10,7 +10,8 @@ function CartButton({book}) {
   const currentUser = useSelector(state=>state.currentUser.currentUser)
   // console.log(cartItems)
 
-  const handleAddToCart = ()=>{
+  const handleAddToCart = (e)=>{
+    e.stopPropagation();
     const existingItem = cartItems.find(
                 item=>item.id === book.id);
 

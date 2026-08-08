@@ -10,8 +10,11 @@ import {
   Heart,
   Ellipsis
 } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 function Categories() {
+
+  const navigate = useNavigate()
 
   const list =[
     {
@@ -173,6 +176,7 @@ function Categories() {
                       color: item.btnColor,
                       borderColor: item.btnColor,
                     }}
+                    onClick={()=>navigate('/products')}
                   >
                     Explore
                     <HiArrowRight className="text-lg" />

@@ -10,13 +10,15 @@ import { setCart } from '../redux/slices/CartSlice';
 import { useCurrentUser } from '../hooks/useCurrentUser';
 import { setCurrentUser } from '../redux/slices/currentUserSlice';
 import EmptyCart from '../components/emptyComponents/emptyCart';
+import { useNavigate } from 'react-router-dom';
 
 
 function Cart() {
     const cart = useSelector(state => state.cart.items);
     const id = JSON.parse(localStorage.getItem("userId"));
     const {data:user , isLoading , error} = useCurrentUser(id);
-    
+    const navigate = useNavigate();
+
     const dispatch = useDispatch();
     useEffect(()=>{
         if(user){
@@ -64,8 +66,12 @@ function Cart() {
                                 <span>total</span>
                                 <span>{totalPrice}</span>
                             </div>
-                            <button className='border w-full py-2 lg:mt-5 mt-3 rounded-md text-white bg-[#1D7A46] flex items-center justify-center gap-2'><SlLock /> Proceed to checkOut</button>
-                            <button className='border w-full py-2 lg:mt-5 mt-3 rounded-md  text-[#1D7A46] flex items-center justify-center gap-2' > <HiOutlineShoppingBag /> Buy Now</button>
+                            <button 
+                            onClick={()=>navigate('/checkout')}
+                            className='border w-full py-2 lg:mt-5 mt-3 rounded-md text-white bg-[#1D7A46] flex items-center justify-center gap-2'><SlLock /> Proceed to checkOut</button>
+                            <button 
+                            onClick={()=>navigate('/checkout')}
+                            className='border w-full py-2 lg:mt-5 mt-3 rounded-md  text-[#1D7A46] flex items-center justify-center gap-2' > <HiOutlineShoppingBag /> Buy Now</button>
                         </div>
                     </div>
             </div>

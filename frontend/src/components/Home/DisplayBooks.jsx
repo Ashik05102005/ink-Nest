@@ -3,13 +3,18 @@ import { CiHeart } from 'react-icons/ci'
 import { FaStar } from "react-icons/fa6";
 import WishlistIcon from '../buttons/WishlistIcon';
 import CartButton from '../buttons/CartButton';
+import { useNavigate } from 'react-router-dom';
 
 
 function DisplayBooks({data}) {
+    const navigate = useNavigate()
   return (
-    <div className=' flex overflow-x-scroll hide-scrollbar justify-around gap-5 py-3'>
+    <div 
+    
+    className=' flex overflow-x-scroll hide-scrollbar justify-around gap-5 py-3'>
             {data.slice(0,6).map((book)=>(
                 <div
+                onClick={()=>{navigate(`/books/${book.id}`)}}
                 key={book.id}
                 className='min-w-100 bg-white rounded-md  flex  items-center p-2 gap-2 '
                 >
