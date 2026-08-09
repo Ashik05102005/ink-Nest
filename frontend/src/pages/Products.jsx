@@ -36,7 +36,7 @@ function Products() {
        return (categorymatch&&priceMatch&&searchMatch)
     
     })
-
+    //to sort
     const sortedBooks = [...filteredBooks].sort((a,b)=>{
         if(sortBy==="priceLow"){
             return a.price - b.price
