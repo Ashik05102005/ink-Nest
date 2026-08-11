@@ -1,18 +1,18 @@
 import React,{useEffect, useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import NavBar from '../components/Home/NavBar';
+import NavBar from '../../components/Home/NavBar';
 import { FaAngleRight } from "react-icons/fa6";
-import CheckoutForm from '../components/CheckOut/checkForm';
-import PaymentMethod from '../components/CheckOut/PaymentMethod'
-import { useCurrentUser } from "../hooks/useCurrentUser";
-import { setCurrentUser } from '../redux/slices/currentUserSlice';
-import { clearCart, setCart } from '../redux/slices/CartSlice';
-import CartSummary from '../components/CheckOut/CartSummary';
+import CheckoutForm from '../../components/CheckOut/checkForm';
+import PaymentMethod from '../../components/CheckOut/PaymentMethod'
+import { useCurrentUser } from "../../hooks/useCurrentUser";
+import { setCurrentUser } from '../../redux/slices/currentUserSlice';
+import { clearCart, setCart } from '../../redux/slices/CartSlice';
+import CartSummary from '../../components/CheckOut/CartSummary';
 import { de } from 'zod/v4/locales';
-import { useCreateOrder } from '../hooks/useCreateOrder';
+import { useCreateOrder } from '../../hooks/useCreateOrder';
 import { useNavigate } from 'react-router-dom';
-import { useUpdateCart } from '../hooks/useUpdateCart';
-import { addOrderById } from '../services/api/CurrentUserApi';
+import { useUpdateCart } from '../../hooks/useUpdateCart';
+import { addOrderById } from '../../services/api/CurrentUserApi';
 
 
 
@@ -25,7 +25,8 @@ function CheckOut() {
   const userId = JSON.parse(localStorage.getItem("userId"));
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [orders,setOrders] = useState([])
+  const [orders,setOrders] = useState([]);
+  const [step , setStep ] = useState(1);
 
   const {data:user , isLoading , error} = useCurrentUser(userId);
 
@@ -139,9 +140,15 @@ function CheckOut() {
 
           <div className='mt-3 grid md:grid-cols-2 gap-5'>
             <div className='flex flex-col gap-3'>
-                <CheckoutForm  selectedAddress={selectedAddress} 
-                               setSelectedAddress={setSelectedAddress}/>
-                <PaymentMethod payment={payment} setPayment={setPayment}/>
+              
+                  {step===1 && <CheckoutForm  selectedAddress={selectedAddress} 
+                               setSelectedAddress={setSelectedAddress}
+                               onContinue={()=>setStep(2)}/>
+                  }
+                  {step===2&&
+                    <PaymentMethod payment={payment} setPayment={setPayment}/>}
+              
+                
             </div>
             
             <div >

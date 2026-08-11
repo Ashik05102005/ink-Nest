@@ -4,7 +4,7 @@ import {useSelector} from "react-redux"
 import {useAddAddress} from '../../hooks/useAddAddress'
 import { checkoutSchema } from "../../Schema/CheckoutSchema";
 
-function CheckoutForm({selectedAddress, setSelectedAddress}) {
+function CheckoutForm({selectedAddress, setSelectedAddress , onContinue}) {
 
     const currentUser = useSelector((state)=>state.currentUser.currentUser)
     const [errors,setErrors]=useState({});
@@ -12,8 +12,8 @@ function CheckoutForm({selectedAddress, setSelectedAddress}) {
     const [address,setAddress] = useState([])
     useEffect(()=>{
         setAddress(currentUser?.address||[] )
-        console.log(address);
-    },[selectedAddress])
+        // console.log(address);
+    },[currentUser])
 
     const [formData, setFormData] = useState({
         fullName: "",
@@ -40,13 +40,16 @@ function CheckoutForm({selectedAddress, setSelectedAddress}) {
             return ;
        
         }
+        const newAddress = {id : Date.now(), ...formData}
         updateAddressMutation.mutate({
             userId : currentUser.id,
-            address:[...address,formData]
+            address:[...address,newAddress]
         },
         {
-            onSuccess:(newAddress)=>{
+            onSuccess:()=>{
                 console.log("suceed" );
+
+                setAddress(prev => [...prev, newAddress]);
 
                 setSelectedAddress(newAddress);
 
@@ -110,7 +113,7 @@ function CheckoutForm({selectedAddress, setSelectedAddress}) {
 
                         <button
                             type="button"
-                            onChange={() => setShowAddressForm(true)}
+                            onClick={() => setShowAddressForm(true)}
                             className="text-[#1D7A46] font-medium hover:underline"
                         >
                             + Add New Address
@@ -177,6 +180,7 @@ function CheckoutForm({selectedAddress, setSelectedAddress}) {
 
                     <button
                         type="button"
+                        onClick={onContinue}
                         disabled={!selectedAddress}
                         className="
                             mt-6

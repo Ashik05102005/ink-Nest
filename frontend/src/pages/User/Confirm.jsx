@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 // import { FaCheckCircle, FaBoxOpen } from "react-icons/fa";
-import { useFetchOrderById } from "../hooks/useFetchOrderById";
+import { useFetchOrderById } from "../../hooks/useFetchOrderById";
 import {
     FaCheckCircle,
     FaBoxOpen,

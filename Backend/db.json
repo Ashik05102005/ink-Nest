@@ -794,6 +794,115 @@
         }
       ],
       "id": "6lyavUBjUSU"
+    },
+    {
+      "name": "ashik123",
+      "email": "ashik2@gmail.com",
+      "password": "ashik123",
+      "confirm": "ashik123",
+      "cart": [],
+      "wishlist": [],
+      "orders": [
+        {
+          "id": "qJycg9Ad6oY",
+          "userId": "LU35uhYRfms",
+          "items": [
+            {
+              "id": "3",
+              "title": "Ikigai",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
+            },
+            {
+              "id": "2",
+              "title": "The Alchemist",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+            },
+            {
+              "id": "1",
+              "title": "Atomic Habits",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+            }
+          ],
+          "shippingAddress": {
+            "id": 1786336522706,
+            "fullName": "Ashik",
+            "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+            "city": "Nadapuram",
+            "pincode": "673504",
+            "phone": "7012613984"
+          },
+          "PaymentMethod": "cod",
+          "subtotal": 1147,
+          "delivery": 0,
+          "total": 1147,
+          "status": "pending",
+          "orderAt": "2026-08-10T04:35:35.772Z"
+        },
+        {
+          "id": "1plPt_rLJY8",
+          "userId": "LU35uhYRfms",
+          "items": [
+            {
+              "id": "1",
+              "title": "Atomic Habits",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+            },
+            {
+              "id": "6",
+              "title": "Think and Grow Rich",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg"
+            },
+            {
+              "id": "34",
+              "title": "You Don't Know JS Yet",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781098124045-L.jpg"
+            },
+            {
+              "id": "20",
+              "title": "The Silent Patient",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg"
+            },
+            {
+              "id": "13",
+              "title": "The Mountain Is You",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg"
+            }
+          ],
+          "shippingAddress": {
+            "id": 1786336522706,
+            "fullName": "Ashik",
+            "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+            "city": "Nadapuram",
+            "pincode": "673504",
+            "phone": "7012613984"
+          },
+          "PaymentMethod": "cod",
+          "subtotal": 2045,
+          "delivery": 0,
+          "total": 2045,
+          "status": "pending",
+          "orderAt": "2026-08-10T04:42:43.305Z"
+        }
+      ],
+      "address": [
+        {
+          "id": 1786336522706,
+          "fullName": "Ashik",
+          "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+          "city": "Nadapuram",
+          "pincode": "673504",
+          "phone": "7012613984"
+        }
+      ],
+      "id": "LU35uhYRfms"
     }
   ],
   "books": [
@@ -2967,6 +3076,94 @@
       "total": 848,
       "status": "pending",
       "orderAt": "2026-08-08T09:17:07.317Z"
+    },
+    {
+      "id": "qJycg9Ad6oY",
+      "userId": "LU35uhYRfms",
+      "items": [
+        {
+          "id": "3",
+          "title": "Ikigai",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
+        },
+        {
+          "id": "2",
+          "title": "The Alchemist",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+        },
+        {
+          "id": "1",
+          "title": "Atomic Habits",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1786336522706,
+        "fullName": "Ashik",
+        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+        "city": "Nadapuram",
+        "pincode": "673504",
+        "phone": "7012613984"
+      },
+      "PaymentMethod": "cod",
+      "subtotal": 1147,
+      "delivery": 0,
+      "total": 1147,
+      "status": "pending",
+      "orderAt": "2026-08-10T04:35:35.772Z"
+    },
+    {
+      "id": "1plPt_rLJY8",
+      "userId": "LU35uhYRfms",
+      "items": [
+        {
+          "id": "1",
+          "title": "Atomic Habits",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+        },
+        {
+          "id": "6",
+          "title": "Think and Grow Rich",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg"
+        },
+        {
+          "id": "34",
+          "title": "You Don't Know JS Yet",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781098124045-L.jpg"
+        },
+        {
+          "id": "20",
+          "title": "The Silent Patient",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg"
+        },
+        {
+          "id": "13",
+          "title": "The Mountain Is You",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1786336522706,
+        "fullName": "Ashik",
+        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+        "city": "Nadapuram",
+        "pincode": "673504",
+        "phone": "7012613984"
+      },
+      "PaymentMethod": "cod",
+      "subtotal": 2045,
+      "delivery": 0,
+      "total": 2045,
+      "status": "pending",
+      "orderAt": "2026-08-10T04:42:43.305Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

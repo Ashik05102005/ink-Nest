@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
-import NavBar from '../components/Home/NavBar'
-import { useBooks } from '../hooks/useBooks'
-import ProductSBookCard from '../components/Cards/ProductSBookCard';
-import FilterSidebar from '../components/Products/FilterSidebar';
-import ProductGrid from '../components/Products/productGrid';
-import SearchComponent from '../components/Products/SearchComponent';
-import SortDropdown from '../components/Products/SortDropdown';
+import NavBar from '../../components/Home/NavBar'
+import { useBooks } from '../../hooks/useBooks'
+import ProductSBookCard from '../../components/Cards/ProductSBookCard';
+import FilterSidebar from '../../components/Products/FilterSidebar';
+import ProductGrid from '../../components/Products/productGrid';
+import SearchComponent from '../../components/Products/SearchComponent';
+import SortDropdown from '../../components/Products/SortDropdown';
 
 function Products() {
 

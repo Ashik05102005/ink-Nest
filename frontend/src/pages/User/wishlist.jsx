@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import Navbar from '../components/Home/NavBar'
-import WishlistCards from '../components/Cards/WishlistCards'
+import Navbar from '../../components/Home/NavBar'
+import WishlistCards from '../../components/Cards/WishlistCards'
 import {useDispatch, useSelector} from 'react-redux'
 import { CiHeart } from "react-icons/ci";
-import { useCurrentUser } from '../hooks/useCurrentUser';
-import { setCurrentUser } from '../redux/slices/currentUserSlice';
-import { setWishlist } from '../redux/slices/wishlistSlice';
-import EmptyWishlist from '../components/emptyComponents/EmptyWishlist';
+import { useCurrentUser } from '../../hooks/useCurrentUser';
+import { setCurrentUser } from '../../redux/slices/currentUserSlice';
+import { setWishlist } from '../../redux/slices/wishlistSlice';
+import EmptyWishlist from '../../components/emptyComponents/EmptyWishlist';
 
 
 function Wishlist() {

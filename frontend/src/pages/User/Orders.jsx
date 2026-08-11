@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { useCurrentUser } from "../hooks/useCurrentUser";
+import { useCurrentUser } from "../../hooks/useCurrentUser";
 import { useDispatch } from "react-redux";
-import { setCurrentUser } from "../redux/slices/currentUserSlice";
+import { setCurrentUser } from "../../redux/slices/currentUserSlice";
 import { FaBoxOpen } from "react-icons/fa";
-import NavBar from '../components/Home/NavBar'
+import NavBar from '../../components/Home/NavBar'
 
 
 function Orders() {
@@ -36,7 +36,7 @@ function Orders() {
     }
 
     const orders = user?.orders || [];
-
+    console.log(orders)
     return (
       <>
         <NavBar />
@@ -131,6 +131,24 @@ function Orders() {
 
 
                                 {/* Order Details */}
+
+                                {/* // order items data */}
+                                <div className="grid   gap-4 mt-5 pt-4 border-t border-gray-100">
+                                        {order.items.map(item=>(
+                                            <div 
+                                            className=" p-1 border-b border-gray-200 flex gap-5"
+                                            key={item.id}>
+                                                <img 
+                                                className="h-30 w-20 rounded-md "
+                                                src={item.image}></img>
+                                                <div className="flex flex-col gap-2">
+                                                    <h1 className="text-xl font-semibold">{item.title}</h1>
+                                                    <span className="text-sm text-gray-500">Quantity : {item.quantity}</span>
+                                                    <span className="text-[#1D7A46] text-xl font-semibold"> Rs 500</span>
+                                                </div>
+                                            </div>
+                                        ))}
+                                </div>
 
                                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-5 pt-4 border-t border-gray-100">
 

@@ -1,15 +1,16 @@
 import React from "react"
-import Home from "./pages/Home"
+import Home from './pages/User/Home'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Login from "./pages/Login"
-import Wishlist from "./pages/wishlist"
-import Cart from "./pages/Cart"
-import Products from "./pages/Products"
+import Wishlist from "./pages/User/wishlist"
+import Cart from "./pages/User/Cart"
+import Products from "./pages/User/Products"
 import ProductView from "./components/Products/productView"
-import CheckOut from "./pages/CheckOut"
-import Confirm from "./pages/Confirm"
-import Orders from "./pages/Orders"
+import CheckOut from "./pages/User/CheckOut"
+import Confirm from "./pages/user/Confirm"
+import Orders from "./pages/User/Orders"
 import ProtectedRoute from "./routes/protectedRoute"
+import Admin from "./pages/Admin/Admin"
 
 function App() {
   
@@ -27,7 +28,7 @@ function App() {
             <Route path="/checkout" element={<ProtectedRoute><CheckOut /></ProtectedRoute>} />
             <Route path="/confirm/:id" element={<ProtectedRoute ><Confirm /></ProtectedRoute>} />
             <Route path="/orders" element={<Orders />} />
-            
+            <Route path="/admin" element={<Admin />} />
 
           </Routes>
         </BrowserRouter>

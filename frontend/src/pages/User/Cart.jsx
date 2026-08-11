@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react'
-import NavBar from '../components/Home/NavBar'
+import NavBar from '../../components/Home/NavBar'
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useDispatch, useSelector } from 'react-redux';
-import CartButton from '../components/buttons/CartButton';
-import CartCard from '../components/Cards/CartCard';
+import CartButton from '../../components/buttons/CartButton';
+import CartCard from '../../components/Cards/CartCard';
 import { SlLock } from "react-icons/sl";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import { setCart } from '../redux/slices/CartSlice';
-import { useCurrentUser } from '../hooks/useCurrentUser';
-import { setCurrentUser } from '../redux/slices/currentUserSlice';
-import EmptyCart from '../components/emptyComponents/emptyCart';
+import { setCart } from '../../redux/slices/CartSlice';
+import { useCurrentUser } from '../../hooks/useCurrentUser';
+import { setCurrentUser } from '../../redux/slices/currentUserSlice';
+import EmptyCart from '../../components/emptyComponents/emptyCart';
 import { useNavigate } from 'react-router-dom';
 
 
