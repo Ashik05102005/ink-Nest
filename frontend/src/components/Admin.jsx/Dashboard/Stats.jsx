@@ -4,10 +4,14 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { GoPeople } from "react-icons/go";
 import { HiOutlineCurrencyRupee } from "react-icons/hi2";
 import { CgNotes } from "react-icons/cg";
+import { useSelector } from 'react-redux';
 
 
 
 function Stats() {
+    
+    const orders = useSelector(state=>state.orders.items);
+    
   return (
         <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-4 p-3'>
 
@@ -29,7 +33,7 @@ function Stats() {
                 </div>
                 <div className='flex flex-col'>
                     <span className='text-sm text-[#374151]'>Total Orders</span>
-                    <span className='text-[#111827] text-xl font-medium'>1245</span>
+                    <span className='text-[#111827] text-xl font-medium'>{orders?orders.length:0}</span>
                 </div>
             </div>
 
@@ -51,7 +55,12 @@ function Stats() {
                 </div>
                 <div className='flex flex-col'>
                     <span className='text-sm text-[#374151]'>Total Revenue</span>
-                    <span className='text-[#111827] text-xl font-medium'>1245</span>
+                    <span className='text-[#111827] text-xl font-medium'>
+                        {
+                            orders 
+                                ? orders.reduce((total , item)=>total+=item.total,0) 
+                                : 0
+                        }</span>
                 </div>
             </div>
 
@@ -62,7 +71,16 @@ function Stats() {
                 </div>
                 <div className='flex flex-col'>
                     <span className='text-sm text-[#374151]'>Pending Orders</span>
-                    <span className='text-[#111827] text-xl font-medium'>1245</span>
+                    <span className='text-[#111827] text-xl font-medium'>
+                        {
+                            orders 
+                                ?orders.reduce((total , item)=>{
+                                    if(item.status === "pending"){
+                                        return total+=1
+                                    }
+                                },0):0
+                        }
+                    </span>
                 </div>
             </div>
         </div>

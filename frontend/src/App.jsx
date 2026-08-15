@@ -11,6 +11,10 @@ import Confirm from "./pages/user/Confirm"
 import Orders from "./pages/User/Orders"
 import ProtectedRoute from "./routes/protectedRoute"
 import Admin from "./pages/Admin/Admin"
+import DashBoard from "./pages/Admin/DashBoard"
+import Books from "./pages/Admin/Books"
+import AdminOrders from "./pages/Admin/Orders"
+import Users from "./pages/Admin/Users"
 
 function App() {
   
@@ -28,7 +32,16 @@ function App() {
             <Route path="/checkout" element={<ProtectedRoute><CheckOut /></ProtectedRoute>} />
             <Route path="/confirm/:id" element={<ProtectedRoute ><Confirm /></ProtectedRoute>} />
             <Route path="/orders" element={<Orders />} />
-            <Route path="/admin" element={<Admin />} />
+            <Route path="/admin" element={<Admin />}>
+
+              <Route index element={<DashBoard />} />
+
+              <Route path="books" element={<Books />} />
+
+              <Route path="orders" element={<AdminOrders />} />
+
+              <Route path="users" element={<Users />} />
+            </Route>
 
           </Routes>
         </BrowserRouter>

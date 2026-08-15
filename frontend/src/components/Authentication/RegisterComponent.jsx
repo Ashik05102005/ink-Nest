@@ -13,7 +13,7 @@ import { checkEmail } from '../../services/api/authenticationApi';
 
 
 const INITIALSTATE ={name:'',email:'',password:'',confirm:''}
-const ADDITIONALDATA = {cart : [] , wishlist : [] , orders : [] , address : [] }
+const ADDITIONALDATA = {cart : [] , wishlist : [] , orders : [] , address : [] , role:"user" ,status:"active" }
 
 function RegisterComponent({isLogin , setIsLogin}) {
 

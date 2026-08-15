@@ -1,12 +1,14 @@
 import React from 'react'
 import { useBooks } from '../../../hooks/useBooks'
 
-function TrendingBooks() {
-    const {data:books , isLoading , error} = useBooks();
-    if(isLoading) return <h1>Loading....</h1>
-    if(error) return <h1>Error....</h1>
-    books.sort((a,b)=>b.trending - a.trending);
-    console.log(books)
+function LowStock() {
+    const {data:books , isLoading , error}  = useBooks()
+
+    if(isLoading) return <h1>Loading...</h1>
+    if(error) return <h1>Error...</h1>
+    console.log(books);
+
+    books.sort((a,b)=>a.stock - b.stock)
   return (
         <div className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm h-[430px] flex flex-col">
 
@@ -14,7 +16,7 @@ function TrendingBooks() {
             <div className="flex items-center justify-between pb-4 flex-shrink-0">
 
                 <h1 className="text-lg font-semibold text-gray-900">
-                Top Selling Books
+                Low Stock Books
                 </h1>
 
                 <button className="text-sm font-medium text-[#1D7A46] hover:text-[#145C34]">
@@ -82,16 +84,17 @@ function TrendingBooks() {
                     </div>
 
 
-                    {/* Sales */}
-                    <div className="text-right flex-shrink-0">
+                    {/* stock */}
+                    <div className="text-right flex-shrink-0 flex items-center justify-between w-1/3">
 
                         <p className="text-sm font-semibold text-gray-900">
-                        {item.sold || 0}
+                        {item.stock}
                         </p>
 
-                        <p className="text-xs text-gray-500">
-                        sold
-                        </p>
+                        {item.stock===0 && <span className='bg-red-200 px-4 text-sm  rounded-full text-red-600'>Out of Stock</span>}
+                        {item.stock>0&&item.stock<10? <span className='bg-yellow-200 px-4 text-sm  rounded-full text-yellow-600'>Low Stock</span>:null}
+                        {item.stock>10? <span className='bg-green-200 px-4 text-sm  rounded-full text-green-600'>In Stock</span>:null}
+
 
                     </div>
 
@@ -107,4 +110,4 @@ function TrendingBooks() {
   )
 }
 
-export default TrendingBooks
+export default LowStock

@@ -5,7 +5,216 @@
       "email": "lllashik2@gmail.com",
       "password": "ashik123",
       "confirm": "ashik123",
-      "cart": [],
+      "cart": [
+        {
+          "id": "2",
+          "title": "The Alchemist",
+          "author": "Paulo Coelho",
+          "publisher": "HarperCollins",
+          "category": "Fiction",
+          "price": 299,
+          "rating": 4.7,
+          "reviewCount": 8200,
+          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
+          "images": [
+            "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
+            "https://covers.openlibrary.org/b/isbn/9780061122415-M.jpg",
+            "https://covers.openlibrary.org/b/isbn/9780061122415-S.jpg"
+          ],
+          "description": "The Alchemist by Paulo Coelho.",
+          "stock": 22,
+          "featured": true,
+          "trending": true,
+          "releaseDate": "1993-05-01",
+          "isbn": "9780061122415",
+          "pages": 208,
+          "language": "English",
+          "format": "Paperback",
+          "edition": "HarperCollins Paperback Edition",
+          "dimensions": "20 x 13 x 2.5 cm",
+          "previewUrl": "https://books.google.com/books?vid=ISBN9780061122415",
+          "reviews": [
+            {
+              "id": 1,
+              "name": "Aarav",
+              "rating": 4.8,
+              "comment": "A practical and enjoyable read with ideas that are easy to apply.",
+              "sample": true
+            },
+            {
+              "id": 2,
+              "name": "Meera",
+              "rating": 4.7,
+              "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
+              "sample": true
+            },
+            {
+              "id": 3,
+              "name": "Rahul",
+              "rating": 4.6,
+              "comment": "The book delivers a strong central idea and gives plenty to think about.",
+              "sample": true
+            }
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "title": "Ikigai",
+          "author": "Héctor García",
+          "publisher": "Penguin Random House",
+          "category": "Self Help",
+          "price": 399,
+          "rating": 4.7,
+          "reviewCount": 6600,
+          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg",
+          "images": [
+            "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg",
+            "https://covers.openlibrary.org/b/isbn/9781786330895-M.jpg",
+            "https://covers.openlibrary.org/b/isbn/9781786330895-S.jpg"
+          ],
+          "description": "Ikigai by Héctor García.",
+          "stock": 23,
+          "featured": true,
+          "trending": true,
+          "releaseDate": "2017-08-29",
+          "isbn": "9781786330895",
+          "pages": 208,
+          "language": "English",
+          "format": "Hardcover",
+          "edition": "Hutchinson Edition",
+          "dimensions": "20 x 13 x 2.5 cm",
+          "previewUrl": "https://books.google.com/books?vid=ISBN9781786330895",
+          "reviews": [
+            {
+              "id": 1,
+              "name": "Aarav",
+              "rating": 4.8,
+              "comment": "A practical and enjoyable read with ideas that are easy to apply.",
+              "sample": true
+            },
+            {
+              "id": 2,
+              "name": "Meera",
+              "rating": 4.7,
+              "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
+              "sample": true
+            },
+            {
+              "id": 3,
+              "name": "Rahul",
+              "rating": 4.6,
+              "comment": "The book delivers a strong central idea and gives plenty to think about.",
+              "sample": true
+            }
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "4",
+          "title": "Rich Dad Poor Dad",
+          "author": "Robert Kiyosaki",
+          "publisher": "Harper Business",
+          "category": "Finance",
+          "price": 480,
+          "rating": 4.8,
+          "reviewCount": 10300,
+          "image": "https://covers.openlibrary.org/b/isbn/9781612681139-L.jpg",
+          "images": [
+            "https://covers.openlibrary.org/b/isbn/9781612681139-L.jpg",
+            "https://covers.openlibrary.org/b/isbn/9781612681139-M.jpg",
+            "https://covers.openlibrary.org/b/isbn/9781612681139-S.jpg"
+          ],
+          "description": "Rich Dad Poor Dad by Robert Kiyosaki.",
+          "stock": 24,
+          "featured": true,
+          "trending": true,
+          "releaseDate": "2017-04-11",
+          "isbn": "9781612681139",
+          "pages": 336,
+          "language": "English",
+          "format": "Paperback",
+          "edition": "25th Anniversary Edition",
+          "dimensions": "20 x 13 x 2.5 cm",
+          "previewUrl": "https://books.google.com/books?vid=ISBN9781612681139",
+          "reviews": [
+            {
+              "id": 1,
+              "name": "Aarav",
+              "rating": 4.9,
+              "comment": "A practical and enjoyable read with ideas that are easy to apply.",
+              "sample": true
+            },
+            {
+              "id": 2,
+              "name": "Meera",
+              "rating": 4.8,
+              "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
+              "sample": true
+            },
+            {
+              "id": 3,
+              "name": "Rahul",
+              "rating": 4.7,
+              "comment": "The book delivers a strong central idea and gives plenty to think about.",
+              "sample": true
+            }
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "title": "The Psychology of Money",
+          "author": "Morgan Housel",
+          "publisher": "Penguin Random House",
+          "category": "Finance",
+          "price": 320,
+          "rating": 4.9,
+          "reviewCount": 9100,
+          "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg",
+          "images": [
+            "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg",
+            "https://covers.openlibrary.org/b/isbn/9780857197689-M.jpg",
+            "https://covers.openlibrary.org/b/isbn/9780857197689-S.jpg"
+          ],
+          "description": "The Psychology of Money by Morgan Housel.",
+          "stock": 25,
+          "featured": true,
+          "trending": true,
+          "releaseDate": "2020-09-08",
+          "isbn": "9780857197689",
+          "pages": 256,
+          "language": "English",
+          "format": "Paperback",
+          "edition": "Standard Paperback Edition",
+          "dimensions": "20 x 13 x 2.5 cm",
+          "previewUrl": "https://books.google.com/books?vid=ISBN9780857197689",
+          "reviews": [
+            {
+              "id": 1,
+              "name": "Aarav",
+              "rating": 5,
+              "comment": "A practical and enjoyable read with ideas that are easy to apply.",
+              "sample": true
+            },
+            {
+              "id": 2,
+              "name": "Meera",
+              "rating": 4.9,
+              "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
+              "sample": true
+            },
+            {
+              "id": 3,
+              "name": "Rahul",
+              "rating": 4.8,
+              "comment": "The book delivers a strong central idea and gives plenty to think about.",
+              "sample": true
+            }
+          ],
+          "quantity": 1
+        }
+      ],
       "wishlist": [
         {
           "id": "1",
@@ -890,6 +1099,32 @@
           "total": 2045,
           "status": "pending",
           "orderAt": "2026-08-10T04:42:43.305Z"
+        },
+        {
+          "id": "Pc4hedP0f8Y",
+          "userId": "LU35uhYRfms",
+          "items": [
+            {
+              "id": "2",
+              "title": "The Alchemist",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+            }
+          ],
+          "shippingAddress": {
+            "id": 1786336522706,
+            "fullName": "Ashik",
+            "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+            "city": "Nadapuram",
+            "pincode": "673504",
+            "phone": "7012613984"
+          },
+          "PaymentMethod": "online",
+          "subtotal": 299,
+          "delivery": 40,
+          "total": 339,
+          "status": "pending",
+          "orderAt": "2026-08-14T07:48:02.743Z"
         }
       ],
       "address": [
@@ -903,6 +1138,17 @@
         }
       ],
       "id": "LU35uhYRfms"
+    },
+    {
+      "name": "ashik123",
+      "email": "lllashik5@gmail.com",
+      "password": "ashik123",
+      "confirm": "ashik123",
+      "cart": [],
+      "wishlist": [],
+      "orders": [],
+      "address": [],
+      "id": "uolM7nmNmro"
     }
   ],
   "books": [
@@ -1891,7 +2137,7 @@
         "https://covers.openlibrary.org/b/isbn/9781250301697-S.jpg"
       ],
       "description": "The Silent Patient by Alex Michaelides.",
-      "stock": 20,
+      "stock": 0,
       "featured": false,
       "trending": true,
       "releaseDate": "2019-02-05",
@@ -1942,7 +2188,7 @@
         "https://covers.openlibrary.org/b/isbn/9781594634024-S.jpg"
       ],
       "description": "The Girl on the Train by Paula Hawkins.",
-      "stock": 21,
+      "stock": 5,
       "featured": false,
       "trending": true,
       "releaseDate": "2015-01-13",
@@ -3043,7 +3289,7 @@
       "subtotal": 399,
       "delivery": 40,
       "total": 439,
-      "status": "pending",
+      "status": "cancelled",
       "orderAt": "2026-08-08T09:02:17.317Z"
     },
     {
@@ -3074,7 +3320,7 @@
       "subtotal": 848,
       "delivery": 0,
       "total": 848,
-      "status": "pending",
+      "status": "shipped",
       "orderAt": "2026-08-08T09:17:07.317Z"
     },
     {
@@ -3164,6 +3410,32 @@
       "total": 2045,
       "status": "pending",
       "orderAt": "2026-08-10T04:42:43.305Z"
+    },
+    {
+      "id": "Pc4hedP0f8Y",
+      "userId": "LU35uhYRfms",
+      "items": [
+        {
+          "id": "2",
+          "title": "The Alchemist",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1786336522706,
+        "fullName": "Ashik",
+        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+        "city": "Nadapuram",
+        "pincode": "673504",
+        "phone": "7012613984"
+      },
+      "PaymentMethod": "online",
+      "subtotal": 299,
+      "delivery": 40,
+      "total": 339,
+      "status": "pending",
+      "orderAt": "2026-08-14T07:48:02.743Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
