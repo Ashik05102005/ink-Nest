@@ -47,7 +47,7 @@ function CheckoutForm({selectedAddress, setSelectedAddress , onContinue}) {
         },
         {
             onSuccess:()=>{
-                console.log("suceed" );
+                console.log(newAddress);
 
                 setAddress(prev => [...prev, newAddress]);
 

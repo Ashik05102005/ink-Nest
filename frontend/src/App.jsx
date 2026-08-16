@@ -31,7 +31,9 @@ function App() {
             <Route path='/books/:id' element={<ProductView />} />
             <Route path="/checkout" element={<ProtectedRoute><CheckOut /></ProtectedRoute>} />
             <Route path="/confirm/:id" element={<ProtectedRoute ><Confirm /></ProtectedRoute>} />
-            <Route path="/orders" element={<Orders />} />
+            <Route path="/orders" element={<ProtectedRoute><Orders /></ProtectedRoute>} />
+
+
             <Route path="/admin" element={<Admin />}>
 
               <Route index element={<DashBoard />} />

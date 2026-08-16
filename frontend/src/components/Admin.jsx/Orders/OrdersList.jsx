@@ -91,11 +91,11 @@ function OrdersList({orders=[]}) {
                   <div>
 
                     <p className="font-medium text-gray-800">
-                      {order.shippingAddress?.name ||order.shippingAddress?.fullName || "Unknown"}
+                      {order?.name ||order.shippingAddress?.fullName || "Unknown"}
                     </p>
 
                     <p className="text-xs text-gray-500">
-                      {order.shippingAddress?.email || "-"}
+                      {order?.email || "-"}
                     </p>
 
                   </div>

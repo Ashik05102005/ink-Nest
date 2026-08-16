@@ -2,16 +2,23 @@ import React from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import { addToCart } from '../../redux/slices/CartSlice';
 import { useUpdateCart } from '../../hooks/useUpdateCart';
+import { useNavigate } from 'react-router-dom';
 
 function CartButton({book}) {
   const dispatch = useDispatch();
   const cartItems = useSelector(state=>state.cart.items);
   const updateCartMutation = useUpdateCart();
-  const currentUser = useSelector(state=>state.currentUser.currentUser)
+  const currentUser = useSelector(state=>state.currentUser.currentUser);
+  const userId = JSON.parse(localStorage.getItem("userId"));
+  const navigate = useNavigate()
   // console.log(cartItems)
 
   const handleAddToCart = (e)=>{
+
     e.stopPropagation();
+    if(!userId) {
+      navigate('/login')
+    }
     const existingItem = cartItems.find(
                 item=>item.id === book.id);
 

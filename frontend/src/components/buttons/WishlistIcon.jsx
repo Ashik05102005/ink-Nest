@@ -4,6 +4,7 @@ import { FaHeart } from "react-icons/fa";
 import { useDispatch, useSelector } from 'react-redux';
 import { addWishlist, removeWishlist } from '../../redux/slices/wishlistSlice';
 import { useUpadateWishlist } from '../../hooks/useUpadteWishlist';
+import { useNavigate } from 'react-router-dom';
 
 
 function WishlistIcon({book}) {
@@ -11,10 +12,14 @@ function WishlistIcon({book}) {
   const wishlist = useSelector(state=>state.wishlist.items);
   const isWishlisted = wishlist.some(item=>item.id === book.id);
   const currentUser = useSelector(state=>state.currentUser.currentUser);
-  
+  const userId = JSON.parse(localStorage.getItem("userId"));
+  const navigate = useNavigate();
   
   const handleAddWishlist = (e)=>{
     e.stopPropagation();
+    if(!userId) {
+      navigate('/login')
+    }
     dispatch(addWishlist(book))
     
     const updatedWishList = [...wishlist , book];

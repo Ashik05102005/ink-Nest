@@ -49,6 +49,8 @@ function CheckOut() {
     const orderData = {
       id : `ORD-${Date.now()}`,
       userId ,
+      name :user.name,
+      email:user.email ,
       items : cart.map(book=>({
         id : book.id,
         title : book.title,
