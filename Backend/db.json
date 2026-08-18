@@ -277,7 +277,7 @@
         "https://covers.openlibrary.org/b/isbn/9780735211292-S.jpg"
       ],
       "description": "Atomic Habits by James Clear.",
-      "stock": 21,
+      "stock": 150,
       "featured": true,
       "trending": true,
       "releaseDate": "2018-10-16",
@@ -318,7 +318,7 @@
       "author": "Paulo Coelho",
       "publisher": "HarperCollins",
       "category": "Fiction",
-      "price": 299,
+      "price": 399,
       "rating": 4.7,
       "reviewCount": 8200,
       "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
@@ -2038,6 +2038,57 @@
       "trending": false,
       "rating": 4,
       "id": "kfgYOlYJd2s"
+    },
+    {
+      "title": "A Game of Thrones",
+      "author": "George R. R. Martin",
+      "publisher": "Bantam Books",
+      "category": "Fantasy",
+      "price": 599,
+      "stock": 22,
+      "isbn": "9780553593716",
+      "pages": 694,
+      "language": "English",
+      "format": "Paperback",
+      "image": "https://covers.openlibrary.org/b/isbn/9780553593716-L.jpg",
+      "description": "A Game of Thrones by George R. R. Martin.",
+      "releaseDate": "1996-08-06",
+      "edition": "Bantam Paperback Edition",
+      "dimensions": "20 x 13 x 2.5 cm",
+      "previewUrl": "https://books.google.com/books?vid=ISBN9780553593716",
+      "featured": false,
+      "trending": true,
+      "rating": 4.6,
+      "id": "K75AxzT1lBI",
+      "reviewCount": 10800,
+      "images": [
+        "https://covers.openlibrary.org/b/isbn/9780553593716-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9780553593716-M.jpg",
+        "https://covers.openlibrary.org/b/isbn/9780553593716-S.jpg"
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Aarav",
+          "rating": 4.7,
+          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
+          "sample": true
+        },
+        {
+          "id": 2,
+          "name": "Meera",
+          "rating": 4.6,
+          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
+          "sample": true
+        },
+        {
+          "id": 3,
+          "name": "Rahul",
+          "rating": 4.5,
+          "comment": "The book delivers a strong central idea and gives plenty to think about.",
+          "sample": true
+        }
+      ]
     }
   ],
   "orders": [

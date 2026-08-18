@@ -9,6 +9,7 @@ import BookList from '../../components/Admin.jsx/books/BookList';
 import BooksSort from '../../components/Admin.jsx/books/BooksSort';
 import BookForm from '../../components/Admin.jsx/books/BookForm';
 import { useAddBooks } from '../../hooks/Admin/useAddBooks';
+import { useUpdateBooks } from '../../hooks/Admin/useUpadteBooks';
 
 
 
@@ -24,6 +25,7 @@ function Books() {
   const {data:books,isLoading,error} = useBooks();
 
   const addBooks = useAddBooks();
+  const updateBookMutation = useUpdateBooks();
   
   //filtered books 
   const filteredBooks = useMemo(()=>{
@@ -98,22 +100,51 @@ function Books() {
   },[books,search,category,status,sort]);
 
 
-  
+  const handleEditBook = (book)=>{
+    // console.log(book)
+    setSelectedBooks(book);
+    setShowModal(true);
+  }
+
+
   const handleAddBook = ()=>{
-    setShowModal(true)
+    setShowModal(true);
+    setSelectedBooks(null);
   }
   const handleClose = ()=>{
-    setShowModal(false)
+    setShowModal(false);
+    setSelectedBooks(null);
   }
 
 
   const handleSubmit = (data)=>{
-    addBooks.mutate(data,{
+    if(selectedBooks){
+      //update
+      updateBookMutation.mutate({
+        id : selectedBooks.id,
+        data : data
+      },
+    {
+      onSuccess : ()=>{
+        setShowModal(false);
+        setSelectedBooks(null);
+      },
+      onError : (error)=>{
+        console.error("fails" , error);
+        
+      }
+    })
+    }
+    else{
+      // add new 
+      addBooks.mutate(data,{
       onSuccess : ()=>{
         console.log("succedd")
         setShowModal(false);
       }
     })
+    }
+    
   }
   
 
@@ -156,12 +187,13 @@ function Books() {
           </button>
         </div>
       </div>
-        <BookList books={filteredBooks}/>
+        <BookList books={filteredBooks} onEdit={handleEditBook}/>
         <BookForm  
           showModal={showModal} 
           handleClose={handleClose}
           onSubmit ={handleSubmit}
-          isLoading={addBooks.isPending}/>
+          book={selectedBooks}
+          isLoading={addBooks.isPending || updateBookMutation.isPending}/>
     </div>
   )
 }

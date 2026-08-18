@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoClose } from "react-icons/io5";
 
 const initialForm = {
@@ -23,7 +23,8 @@ const initialForm = {
   rating: ""
 };
 
-function BookForm({ showModal,
+function BookForm({
+  showModal,
   handleClose,
   book = null,
   onSubmit,
@@ -49,6 +50,17 @@ function BookForm({ showModal,
 
     onSubmit(bookData)
   }
+  useEffect(()=>{
+    if(book){
+      setFormData({
+        ...initialForm,
+        ...book,
+      });
+    }
+    else{
+      setFormData(initialForm)
+    }
+  },[book ,showModal])
 
   if (!showModal) return null;
 
@@ -62,13 +74,13 @@ function BookForm({ showModal,
 
           <div>
             <h2 className="text-xl font-semibold text-gray-900">
-              {/* {book ? "Update Book" : "Add New Book"} */}
+              {book ? "Update Book" : "Add New Book"}
             </h2>
 
             <p className="mt-1 text-sm text-gray-500">
-              {/* {book
+              {book
                 ? "Update the book information"
-                : "Add a new book to your store"} */}
+                : "Add a new book to your store"}
             </p>
           </div>
 
