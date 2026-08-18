@@ -7,15 +7,23 @@ import { IoMdAdd } from "react-icons/io";
 import   { useBooks }  from '../../hooks/useBooks'
 import BookList from '../../components/Admin.jsx/books/BookList';
 import BooksSort from '../../components/Admin.jsx/books/BooksSort';
+import BookForm from '../../components/Admin.jsx/books/BookForm';
+import { useAddBooks } from '../../hooks/Admin/useAddBooks';
 
 
 
 function Books() {
   const [search , setSearch] =useState('')
   const [category, setCategory] = useState("All Categories");
-  const [status , setStatus] = useState("All Status");
+  const [status , setStatus] = useState("all");
   const [sort, setSort] = useState("Newest");
+  const [showModal , setShowModal] = useState(false);
+  const [selectedBooks , setSelectedBooks] = useState(null);
+
+
   const {data:books,isLoading,error} = useBooks();
+
+  const addBooks = useAddBooks();
   
   //filtered books 
   const filteredBooks = useMemo(()=>{
@@ -68,10 +76,10 @@ function Books() {
           break;
 
       case "price-low" : 
-          result.sort((a,b) =>(a.price || 0) - b.price || 0);
+          result.sort((a,b)=>Number(a.price || 0) - Number(b.price || 0));
           break ;
       case "price-high" : 
-          result.sort((a,b)=>(a.price || 0 )-(b.price || 0));
+          result.sort((a,b)=>Number(a.price || 0 )-Number(b.price || 0));
           break;
       case "name" : 
           result.sort((a,b)=>a.title.localeCompare(b.title));
@@ -88,9 +96,29 @@ function Books() {
     
     
   },[books,search,category,status,sort]);
+
+
   
+  const handleAddBook = ()=>{
+    setShowModal(true)
+  }
+  const handleClose = ()=>{
+    setShowModal(false)
+  }
+
+
+  const handleSubmit = (data)=>{
+    addBooks.mutate(data,{
+      onSuccess : ()=>{
+        console.log("succedd")
+        setShowModal(false);
+      }
+    })
+  }
+  
+
   if(isLoading) return <h1>Loading..</h1>
-  console.log(books)
+  // console.log(books)
 
 
   return (
@@ -120,13 +148,20 @@ function Books() {
           
         </div>
         <div className='min-w-fit '>
-          <button className='bg-[#1D7A46] py-2 px-4 text-white rounded-lg  flex gap-2 items-center'>
+          <button 
+          onClick={handleAddBook}
+          className='bg-[#1D7A46] py-2 px-4 text-white rounded-lg  flex gap-2 items-center'>
             <IoMdAdd />
             <span>Add New Book</span>
           </button>
         </div>
       </div>
         <BookList books={filteredBooks}/>
+        <BookForm  
+          showModal={showModal} 
+          handleClose={handleClose}
+          onSubmit ={handleSubmit}
+          isLoading={addBooks.isPending}/>
     </div>
   )
 }

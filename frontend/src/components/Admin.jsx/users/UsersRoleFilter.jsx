@@ -1,11 +1,11 @@
 import React from 'react'
 
-function UsersRoleFilter() {
+function UsersRoleFilter({roleFilter , setRoleFilter}) {
   return (
     <div>
        <select
-        // value={roleFilter}
-        // onChange={(e) => setRoleFilter(e.target.value)}
+        value={roleFilter}
+        onChange={(e) => setRoleFilter(e.target.value)}
         className="
             rounded-lg
             border border-gray-200
@@ -19,7 +19,7 @@ function UsersRoleFilter() {
         "
         >
         <option value="all">All Users</option>
-        <option value="customer">Customers</option>
+        <option value="user">Customers</option>
         <option value="admin">Admins</option>
         </select> 
     </div>

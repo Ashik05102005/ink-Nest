@@ -5,7 +5,26 @@ import { TiShoppingCart } from "react-icons/ti";
 import { MdBlock } from "react-icons/md";
 
 
-function UsersStats() {
+function UsersStats({users}) {
+
+  const active = users.reduce((total,user)=>{
+    if(user.status === "active"){
+      return total+1;
+    }
+    return total
+  },0)
+  const customers = users.reduce((total,user)=>{
+    if(user.role === "user"){
+      return total+1;
+    }
+    return total
+  },0)
+  const blocked = users.reduce((total,user)=>{
+    if(user.status === "blocked"){
+      return total+1;
+    }
+    return total
+  },0)
   return (
     <div className=' grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-4 '>
         <div className='p-2 flex shadow rounded border border-gray-200 gap-4'>
@@ -14,7 +33,7 @@ function UsersStats() {
             </div>
             <div>
                 <p className='text-sm text-gray-500'>Total</p>
-                <p className='text-xl font-medium'>1240</p>
+                <p className='text-xl font-medium'>{users.length}</p>
             </div>
         </div>
         <div className='p-2 flex shadow rounded border border-gray-200 gap-4'>
@@ -23,7 +42,7 @@ function UsersStats() {
             </div>
             <div>
                 <p className='text-sm text-gray-500'>Active</p>
-                <p className='text-xl font-medium'>1240</p>
+                <p className='text-xl font-medium'>{active}</p>
             </div>
         </div>
         <div className='p-2 flex shadow rounded border border-gray-200 gap-4'>
@@ -32,7 +51,7 @@ function UsersStats() {
             </div>
             <div>
                 <p className='text-sm text-gray-500'>Customers</p>
-                <p className='text-xl font-medium'>1240</p>
+                <p className='text-xl font-medium'>{customers}</p>
             </div>
         </div>
         <div className='p-2 flex shadow rounded border border-gray-200 gap-4'>
@@ -41,7 +60,7 @@ function UsersStats() {
             </div>
             <div>
                 <p className='text-sm text-gray-500'>Blocked</p>
-                <p className='text-xl font-medium'>1240</p>
+                <p className='text-xl font-medium'>{blocked}</p>
             </div>
         </div>
     </div>

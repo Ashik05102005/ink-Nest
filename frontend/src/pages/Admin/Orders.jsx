@@ -4,18 +4,22 @@ import OrderStats from '../../components/Admin.jsx/Orders/OrderStats'
 import { CiSearch } from "react-icons/ci";
 import OrderFilterByStatus from '../../components/Admin.jsx/Orders/OrderFilterByStatus';
 import OrderFilterbyPayment from '../../components/Admin.jsx/Orders/OrderFilterbyPayment';
-import { useOrders } from '../../hooks/useOrders';
+import { useOrders } from '../../hooks/useOrders'
 import OrderSort from '../../components/Admin.jsx/Orders/OrderSort';
 import OrdersList from '../../components/Admin.jsx/Orders/OrdersList';
+import { useMutateOrder } from '../../hooks/Admin/useMutateOrder';
 
 
 function AdminOrders() {
   const [serach, setSearch ] = useState('');
   const [statusFilter,setStatusFilter] = useState('all');
   const [paymentFilter , setPaymentFilter] = useState('all');
-  const [sortBy ,setSortBy] = useState('newest')
+  const [sortBy ,setSortBy] = useState('newest');
 
   const {data:orders, isLoading , error} = useOrders();
+
+  const mutateOrder = useMutateOrder();
+
   if(isLoading) return <h1>Loading...</h1>;
 
   const filteredorders = orders.filter((order)=>{
@@ -62,11 +66,18 @@ function AdminOrders() {
       }
   })
 
+  const onStatusChange =(id,status)=>{
+    mutateOrder.mutate({
+      id:id , 
+      data : {status:status}
+    })
+  }
+
 
   console.log(paymentFilter)
   return (
     <div>
-      <OrderStats />
+      <OrderStats orders={orders}/>
       <div className='p-3 flex'>
         
         {/* Search  */}
@@ -92,7 +103,7 @@ function AdminOrders() {
         </div>
 
       </div>
-      <OrdersList orders={sortedOrders} />
+      <OrdersList orders={sortedOrders} onStatusChange={onStatusChange} />
 
     </div>
   )

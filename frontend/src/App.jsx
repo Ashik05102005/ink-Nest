@@ -15,6 +15,8 @@ import DashBoard from "./pages/Admin/DashBoard"
 import Books from "./pages/Admin/Books"
 import AdminOrders from "./pages/Admin/Orders"
 import Users from "./pages/Admin/Users"
+import BookForm from "./components/Admin.jsx/books/BookForm"
+import BookModal from "./components/Admin.jsx/books/BookModal"
 
 function App() {
   
@@ -44,7 +46,7 @@ function App() {
 
               <Route path="users" element={<Users />} />
             </Route>
-
+            <Route path='/bookform' element={<BookModal />}/>
           </Routes>
         </BrowserRouter>
         

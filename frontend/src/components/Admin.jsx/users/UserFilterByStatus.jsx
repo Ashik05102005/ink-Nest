@@ -1,11 +1,11 @@
 import React from 'react'
 
-function UserFilterByStatus() {
+function UserFilterByStatus({statusFilter , setStatusFilter}) {
     return (
         <div>
             <select
-                // value={statusFilter}
-                // onChange={(e) => setStatusFilter(e.target.value)}
+                value={statusFilter}
+                onChange={(e) => setStatusFilter(e.target.value)}
                 className="
                 rounded-lg
                 border border-gray-200

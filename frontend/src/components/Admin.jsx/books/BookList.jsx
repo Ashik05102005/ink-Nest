@@ -37,9 +37,9 @@ function BookList({books}) {
                 Stock
               </th>
 
-              <th className="px-3 py-3 text-left text-xs font-medium text-gray-500">
+              {/* <th className="px-3 py-3 text-left text-xs font-medium text-gray-500">
                 Sold
-              </th>
+              </th> */}
 
               <th className="px-3 py-3 text-left text-xs font-medium text-gray-500">
                 Status
@@ -161,13 +161,6 @@ function BookList({books}) {
 
                   </td>
 
-
-                  {/* SOLD */}
-                  <td className="px-3 py-3 text-sm text-gray-600">
-                    {book.sold || 0}
-                  </td>
-
-
                   {/* STATUS */}
                   <td className="px-3 py-3">
 
@@ -193,7 +186,7 @@ function BookList({books}) {
                   {/* ACTIONS */}
                   <td className="px-3 py-3">
 
-                    <div className="flex items-center gap-1.5">
+                    <div className="flex items-center gap-3">
 
                       <button
                         // onClick={() => onEdit?.(book)}
@@ -206,20 +199,6 @@ function BookList({books}) {
                       >
                         <FiEdit2 size={14} />
                       </button>
-
-
-                      <button
-                        // onClick={() => onView?.(book)}
-                        className="
-                          flex h-8 w-8 items-center justify-center
-                          rounded-md border border-gray-200
-                          text-gray-500
-                          transition hover:bg-gray-50
-                        "
-                      >
-                        <FiEye size={14} />
-                      </button>
-
 
                       <button
                         // onClick={() => onDelete?.(book)}

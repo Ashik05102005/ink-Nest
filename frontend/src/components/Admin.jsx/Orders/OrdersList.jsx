@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FiEye, FiEdit2, FiTrash2 } from "react-icons/fi";
 
-function OrdersList({orders=[]}) {
+function OrdersList({orders=[] , onStatusChange}) {
      const [orderStatus ,setOrderStatus]=useState('')
      const formatDate = (date) => {
     return new Date(date).toLocaleDateString("en-IN", {
@@ -255,6 +255,7 @@ function OrdersList({orders=[]}) {
                     {/* Edit */}
 
                    <select 
+                   onChange={(e)=>onStatusChange(order.id ,e.target.value )}
                    className='border px-4 py-2 rounded-md border-gray-200 shadow text-gray-600'
                    value={order.status}>
                     <option value="pending">Pending</option>

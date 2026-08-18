@@ -14,7 +14,39 @@ import { SiTicktick } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 
 
-function OrderStats() {
+function OrderStats({orders}) {
+
+    const pendingOrders = orders.reduce((total,order)=>{
+        if(order.status === "pending"){
+            return total + 1 ;
+        }
+        return total 
+    },0);
+    const shippedOrders = orders.reduce((total,order)=>{
+        if(order.status === "shipped"){
+            return total + 1 ;
+        }
+        return total 
+    },0);
+    const processingOrders = orders.reduce((total,order)=>{
+        if(order.status === "processing"){
+            return total + 1 ;
+        }
+        return total 
+    },0);
+    const DeliveredOrders = orders.reduce((total,order)=>{
+        if(order.status === "deliverd"){
+            return total + 1 ;
+        }
+        return total 
+    },0);
+    const cancelledOrders = orders.reduce((total,order)=>{
+        if(order.status === "cancelled"){
+            return total + 1 ;
+        }
+        return total 
+    },0);
+
   return (
     <div className=' p-3 grid md:grid-cols-6 gap-4 grid-cols-2 '>
         {/* // Total Orders */}
@@ -24,7 +56,7 @@ function OrderStats() {
             </div>
             <div>
                     <p className='text-sm text-gray-600 '>Total Orders</p>
-                    <p className='font-medium text-xl'>1245</p>
+                    <p className='font-medium text-xl'>{orders.length}</p>
                 </div>
         </div>
         {/* // Pending */}
@@ -34,7 +66,7 @@ function OrderStats() {
             </div>
             <div>
                     <p className='text-sm text-gray-600 '>Pending</p>
-                    <p className='font-medium text-xl'>1245</p>
+                    <p className='font-medium text-xl'>{pendingOrders}</p>
                 </div>
         </div>
 
@@ -45,7 +77,7 @@ function OrderStats() {
             </div>
             <div>
                     <p className='text-sm text-gray-600 '>Shipping</p>
-                    <p className='font-medium text-xl'>1245</p>
+                    <p className='font-medium text-xl'>{shippedOrders}</p>
                 </div>
         </div>
 
@@ -57,7 +89,7 @@ function OrderStats() {
             </div>
             <div>
                     <p className='text-sm text-gray-600 '>Processing</p>
-                    <p className='font-medium text-xl'>1245</p>
+                    <p className='font-medium text-xl'>{processingOrders}</p>
                 </div>
         </div>
         {/* // Delivered */}
@@ -67,7 +99,7 @@ function OrderStats() {
             </div>
             <div>
                     <p className='text-sm text-gray-600 '>Delivered</p>
-                    <p className='font-medium text-xl'>1245</p>
+                    <p className='font-medium text-xl'>{DeliveredOrders}</p>
                 </div>
         </div>
 
@@ -78,7 +110,7 @@ function OrderStats() {
             </div>
             <div>
                     <p className='text-sm text-gray-600 '>Cancelled</p>
-                    <p className='font-medium text-xl'>1245</p>
+                    <p className='font-medium text-xl'>{cancelledOrders}</p>
                 </div>
         </div>
 

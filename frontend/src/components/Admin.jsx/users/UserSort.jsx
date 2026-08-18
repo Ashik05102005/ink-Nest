@@ -1,10 +1,10 @@
 import React from 'react'
 
-function UserSort() {
+function UserSort({sortBy , setSortBy}) {
   return (
     <div><select
-//   value={sortBy}
-//   onChange={(e) => setSortBy(e.target.value)}
+  value={sortBy}
+  onChange={(e) => setSortBy(e.target.value)}
   className="
     rounded-lg
     border border-gray-200
