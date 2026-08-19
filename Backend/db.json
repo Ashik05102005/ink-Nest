@@ -9,7 +9,7 @@
       "wishlist": [],
       "orders": [],
       "address": [],
-      "role": "user",
+      "role": "admin",
       "status": "active",
       "id": "6ITa0n6ijYo"
     },
@@ -207,7 +207,7 @@
           "subtotal": 4476,
           "delivery": 0,
           "total": 4476,
-          "status": "pending",
+          "status": "shipped",
           "orderAt": "2026-08-17T04:28:00.539Z"
         },
         {
@@ -241,8 +241,48 @@
           "subtotal": 598,
           "delivery": 0,
           "total": 598,
-          "status": "pending",
+          "status": "deliverd",
           "orderAt": "2026-08-17T04:28:25.137Z"
+        },
+        {
+          "id": "DlbrVO7HvTE",
+          "userId": "3FdEmS_AO8E",
+          "name": "YHTGVRFDSA",
+          "email": "ashik2@gmail.com",
+          "items": [
+            {
+              "id": "1",
+              "title": "Atomic Habits",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+            },
+            {
+              "id": "2",
+              "title": "The Alchemist",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+            },
+            {
+              "id": "4",
+              "title": "Rich Dad Poor Dad",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781612681139-L.jpg"
+            }
+          ],
+          "shippingAddress": {
+            "id": 1786940875446,
+            "fullName": "Murali PK",
+            "address": "Patterkandiyil(ho),",
+            "city": "Nadapuram",
+            "pincode": "673504",
+            "phone": "7012613984"
+          },
+          "PaymentMethod": "cod",
+          "subtotal": 1328,
+          "delivery": 0,
+          "total": 1328,
+          "orderAt": "2026-08-18T06:34:27.984Z",
+          "status": "deliverd"
         }
       ],
       "address": [
@@ -263,7 +303,7 @@
   "books": [
     {
       "id": "1",
-      "title": "Atomic Habits",
+      "title": "Atomic Habits...",
       "author": "James Clear",
       "publisher": "Penguin Random House",
       "category": "Self Help",
@@ -271,11 +311,6 @@
       "rating": 4.8,
       "reviewCount": 12500,
       "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780735211292-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780735211292-S.jpg"
-      ],
       "description": "Atomic Habits by James Clear.",
       "stock": 150,
       "featured": true,
@@ -288,29 +323,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780735211292",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.9,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.8,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.7,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "2",
@@ -322,11 +335,6 @@
       "rating": 4.7,
       "reviewCount": 8200,
       "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780061122415-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780061122415-S.jpg"
-      ],
       "description": "The Alchemist by Paulo Coelho.",
       "stock": 22,
       "featured": true,
@@ -339,29 +347,7 @@
       "edition": "HarperCollins Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780061122415",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.8,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.7,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.6,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "3",
@@ -373,11 +359,6 @@
       "rating": 4.7,
       "reviewCount": 6600,
       "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781786330895-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781786330895-S.jpg"
-      ],
       "description": "Ikigai by Héctor García.",
       "stock": 23,
       "featured": true,
@@ -390,29 +371,7 @@
       "edition": "Hutchinson Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781786330895",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.8,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.7,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.6,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "4",
@@ -424,11 +383,6 @@
       "rating": 4.8,
       "reviewCount": 10300,
       "image": "https://covers.openlibrary.org/b/isbn/9781612681139-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781612681139-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781612681139-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781612681139-S.jpg"
-      ],
       "description": "Rich Dad Poor Dad by Robert Kiyosaki.",
       "stock": 24,
       "featured": true,
@@ -441,29 +395,7 @@
       "edition": "25th Anniversary Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781612681139",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.9,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.8,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.7,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "5",
@@ -475,11 +407,6 @@
       "rating": 4.9,
       "reviewCount": 9100,
       "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780857197689-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780857197689-S.jpg"
-      ],
       "description": "The Psychology of Money by Morgan Housel.",
       "stock": 25,
       "featured": true,
@@ -492,29 +419,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780857197689",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 5,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.9,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.8,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "6",
@@ -526,11 +431,6 @@
       "rating": 4.7,
       "reviewCount": 7400,
       "image": "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781585424337-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781585424337-S.jpg"
-      ],
       "description": "Think and Grow Rich by Napoleon Hill.",
       "stock": 26,
       "featured": true,
@@ -543,29 +443,7 @@
       "edition": "Classic Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781585424337",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.8,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.7,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.6,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "7",
@@ -577,11 +455,6 @@
       "rating": 4.6,
       "reviewCount": 5100,
       "image": "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781455586691-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781455586691-S.jpg"
-      ],
       "description": "Deep Work by Cal Newport.",
       "stock": 27,
       "featured": true,
@@ -594,29 +467,7 @@
       "edition": "Updated Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781455586691",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "8",
@@ -628,11 +479,6 @@
       "rating": 4.5,
       "reviewCount": 4200,
       "image": "https://covers.openlibrary.org/b/isbn/9781443456623-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781443456623-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781443456623-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781443456623-S.jpg"
-      ],
       "description": "The 5 AM Club by Robin Sharma.",
       "stock": 28,
       "featured": true,
@@ -645,29 +491,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781443456623",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.6,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.5,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.4,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "9",
@@ -679,11 +503,6 @@
       "rating": 4.7,
       "reviewCount": 6800,
       "image": "https://covers.openlibrary.org/b/isbn/9781577314806-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781577314806-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781577314806-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781577314806-S.jpg"
-      ],
       "description": "The Power of Now by Eckhart Tolle.",
       "stock": 29,
       "featured": true,
@@ -696,29 +515,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781577314806",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.8,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.7,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.6,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "10",
@@ -730,11 +527,6 @@
       "rating": 4.6,
       "reviewCount": 6200,
       "image": "https://covers.openlibrary.org/b/isbn/9781544512280-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781544512280-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781544512280-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781544512280-S.jpg"
-      ],
       "description": "Can't Hurt Me by David Goggins.",
       "stock": 20,
       "featured": true,
@@ -747,29 +539,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781544512280",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "11",
@@ -781,11 +551,6 @@
       "rating": 4.4,
       "reviewCount": 8900,
       "image": "https://covers.openlibrary.org/b/isbn/9780062457714-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780062457714-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780062457714-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780062457714-S.jpg"
-      ],
       "description": "The Subtle Art of Not Giving a F*ck by Mark Manson.",
       "stock": 21,
       "featured": false,
@@ -798,29 +563,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780062457714",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.5,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.4,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.3,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "12",
@@ -832,11 +575,6 @@
       "rating": 4.5,
       "reviewCount": 3100,
       "image": "https://covers.openlibrary.org/b/isbn/9789391165482-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9789391165482-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9789391165482-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9789391165482-S.jpg"
-      ],
       "description": "Do Epic Shit by Ankur Warikoo.",
       "stock": 22,
       "featured": false,
@@ -849,29 +587,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9789391165482",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.6,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.5,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.4,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "13",
@@ -883,11 +599,6 @@
       "rating": 4.6,
       "reviewCount": 4500,
       "image": "https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781949759228-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781949759228-S.jpg"
-      ],
       "description": "The Mountain Is You by Brianna Wiest.",
       "stock": 23,
       "featured": false,
@@ -900,29 +611,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781949759228",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "14",
@@ -934,11 +623,6 @@
       "rating": 4.6,
       "reviewCount": 5400,
       "image": "https://covers.openlibrary.org/b/isbn/9781591846444-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781591846444-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781591846444-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781591846444-S.jpg"
-      ],
       "description": "Start With Why by Simon Sinek.",
       "stock": 24,
       "featured": false,
@@ -951,29 +635,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781591846444",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "15",
@@ -985,11 +647,6 @@
       "rating": 4.5,
       "reviewCount": 4700,
       "image": "https://covers.openlibrary.org/b/isbn/9780307887894-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780307887894-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780307887894-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780307887894-S.jpg"
-      ],
       "description": "The Lean Startup by Eric Ries.",
       "stock": 25,
       "featured": false,
@@ -1002,29 +659,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780307887894",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.6,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.5,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.4,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "16",
@@ -1036,11 +671,6 @@
       "rating": 4.4,
       "reviewCount": 3900,
       "image": "https://covers.openlibrary.org/b/isbn/9780804139298-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780804139298-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780804139298-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780804139298-S.jpg"
-      ],
       "description": "Zero to One by Peter Thiel.",
       "stock": 26,
       "featured": false,
@@ -1053,29 +683,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780804139298",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.5,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.4,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.3,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "17",
@@ -1087,11 +695,6 @@
       "rating": 4.6,
       "reviewCount": 5200,
       "image": "https://covers.openlibrary.org/b/isbn/9780060555665-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780060555665-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780060555665-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780060555665-S.jpg"
-      ],
       "description": "The Intelligent Investor by Benjamin Graham.",
       "stock": 27,
       "featured": false,
@@ -1104,29 +707,7 @@
       "edition": "Revised Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780060555665",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "18",
@@ -1138,11 +719,6 @@
       "rating": 4.8,
       "reviewCount": 9700,
       "image": "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780547928227-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780547928227-S.jpg"
-      ],
       "description": "The Hobbit by J.R.R. Tolkien.",
       "stock": 28,
       "featured": false,
@@ -1155,29 +731,7 @@
       "edition": "Illustrated/Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780547928227",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.9,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.8,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.7,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "19",
@@ -1189,11 +743,6 @@
       "rating": 4.9,
       "reviewCount": 11200,
       "image": "https://covers.openlibrary.org/b/isbn/9780618640157-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780618640157-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780618640157-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780618640157-S.jpg"
-      ],
       "description": "The Lord of the Rings by J.R.R. Tolkien.",
       "stock": 29,
       "featured": false,
@@ -1206,29 +755,7 @@
       "edition": "50th Anniversary Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780618640157",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 5,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.9,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.8,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "20",
@@ -1240,13 +767,8 @@
       "rating": 4.6,
       "reviewCount": 7600,
       "image": "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781250301697-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781250301697-S.jpg"
-      ],
       "description": "The Silent Patient by Alex Michaelides.",
-      "stock": 0,
+      "stock": 81,
       "featured": false,
       "trending": true,
       "releaseDate": "2019-02-05",
@@ -1257,29 +779,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781250301697",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "21",
@@ -1291,11 +791,6 @@
       "rating": 4.1,
       "reviewCount": 6800,
       "image": "https://covers.openlibrary.org/b/isbn/9781594634024-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781594634024-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781594634024-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781594634024-S.jpg"
-      ],
       "description": "The Girl on the Train by Paula Hawkins.",
       "stock": 5,
       "featured": false,
@@ -1308,29 +803,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781594634024",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.2,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.1,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "22",
@@ -1342,11 +815,6 @@
       "rating": 4.6,
       "reviewCount": 10800,
       "image": "https://covers.openlibrary.org/b/isbn/9780553593716-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780553593716-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780553593716-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780553593716-S.jpg"
-      ],
       "description": "A Game of Thrones by George R. R. Martin.",
       "stock": 22,
       "featured": false,
@@ -1359,29 +827,7 @@
       "edition": "Bantam Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780553593716",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "23",
@@ -1393,11 +839,6 @@
       "rating": 4.5,
       "reviewCount": 8200,
       "image": "https://covers.openlibrary.org/b/isbn/9780142424179-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780142424179-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780142424179-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780142424179-S.jpg"
-      ],
       "description": "The Fault in Our Stars by John Green.",
       "stock": 23,
       "featured": false,
@@ -1410,29 +851,7 @@
       "edition": "Penguin Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780142424179",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.6,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.5,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.4,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "24",
@@ -1444,11 +863,6 @@
       "rating": 4.7,
       "reviewCount": 9200,
       "image": "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780141439518-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780141439518-S.jpg"
-      ],
       "description": "Pride and Prejudice by Jane Austen.",
       "stock": 24,
       "featured": false,
@@ -1461,29 +875,7 @@
       "edition": "Penguin Classics Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780141439518",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.8,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.7,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.6,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "25",
@@ -1495,11 +887,6 @@
       "rating": 4.4,
       "reviewCount": 8300,
       "image": "https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780525559474-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780525559474-S.jpg"
-      ],
       "description": "The Midnight Library by Matt Haig.",
       "stock": 25,
       "featured": false,
@@ -1512,29 +899,7 @@
       "edition": "Canongate Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780525559474",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.5,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.4,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.3,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "26",
@@ -1546,11 +911,6 @@
       "rating": 4.6,
       "reviewCount": 8600,
       "image": "https://covers.openlibrary.org/b/isbn/9781594631931-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781594631931-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781594631931-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781594631931-S.jpg"
-      ],
       "description": "The Kite Runner by Khaled Hosseini.",
       "stock": 26,
       "featured": false,
@@ -1563,29 +923,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781594631931",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "27",
@@ -1597,11 +935,6 @@
       "rating": 4.8,
       "reviewCount": 10500,
       "image": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780061120084-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780061120084-S.jpg"
-      ],
       "description": "To Kill a Mockingbird by Harper Lee.",
       "stock": 27,
       "featured": false,
@@ -1614,29 +947,7 @@
       "edition": "Harper Perennial Modern Classics",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780061120084",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.9,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.8,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.7,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "28",
@@ -1648,11 +959,6 @@
       "rating": 4.6,
       "reviewCount": 9100,
       "image": "https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780375842207-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780375842207-S.jpg"
-      ],
       "description": "The Book Thief by Markus Zusak.",
       "stock": 28,
       "featured": false,
@@ -1665,29 +971,7 @@
       "edition": "Young Readers/Trade Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780375842207",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "29",
@@ -1699,11 +983,6 @@
       "rating": 4.7,
       "reviewCount": 14000,
       "image": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780451524935-S.jpg"
-      ],
       "description": "1984 by George Orwell.",
       "stock": 29,
       "featured": false,
@@ -1716,29 +995,7 @@
       "edition": "Signet Classics Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780451524935",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.8,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.7,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.6,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "30",
@@ -1750,11 +1007,6 @@
       "rating": 4.7,
       "reviewCount": 12800,
       "image": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780062316097-S.jpg"
-      ],
       "description": "Sapiens by Yuval Noah Harari.",
       "stock": 20,
       "featured": false,
@@ -1767,29 +1019,7 @@
       "edition": "Illustrated/Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780062316097",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.8,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.7,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.6,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "31",
@@ -1801,11 +1031,6 @@
       "rating": 4.5,
       "reviewCount": 6500,
       "image": "https://covers.openlibrary.org/b/isbn/9780062464316-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780062464316-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780062464316-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780062464316-S.jpg"
-      ],
       "description": "Homo Deus by Yuval Noah Harari.",
       "stock": 21,
       "featured": false,
@@ -1818,29 +1043,7 @@
       "edition": "Standard Paperback Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780062464316",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.6,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.5,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.4,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "32",
@@ -1852,11 +1055,6 @@
       "rating": 4.6,
       "reviewCount": 7200,
       "image": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780132350884-S.jpg"
-      ],
       "description": "Clean Code by Robert C. Martin.",
       "stock": 22,
       "featured": false,
@@ -1869,29 +1067,7 @@
       "edition": "1st Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9780132350884",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "33",
@@ -1903,11 +1079,6 @@
       "rating": 4.7,
       "reviewCount": 6100,
       "image": "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781593279509-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781593279509-S.jpg"
-      ],
       "description": "Eloquent JavaScript by Marijn Haverbeke.",
       "stock": 23,
       "featured": false,
@@ -1920,29 +1091,7 @@
       "edition": "3rd Edition",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781593279509",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.8,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.7,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.6,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "id": "34",
@@ -1954,11 +1103,6 @@
       "rating": 4.6,
       "reviewCount": 3500,
       "image": "https://covers.openlibrary.org/b/isbn/9781098124045-L.jpg",
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9781098124045-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781098124045-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9781098124045-S.jpg"
-      ],
       "description": "You Don't Know JS Yet by Kyle Simpson.",
       "stock": 24,
       "featured": false,
@@ -1971,29 +1115,7 @@
       "edition": "2nd Edition / Get Started Series",
       "dimensions": "20 x 13 x 2.5 cm",
       "previewUrl": "https://books.google.com/books?vid=ISBN9781098124045",
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     },
     {
       "title": "Poonachi :Adhava Oru Vellatinte Katha",
@@ -2015,7 +1137,8 @@
       "featured": false,
       "trending": false,
       "rating": 4.5,
-      "id": "wBvD-6lI3Ws"
+      "id": "wBvD-6lI3Ws",
+      "deleted": false
     },
     {
       "title": "The First Season",
@@ -2037,7 +1160,8 @@
       "featured": false,
       "trending": false,
       "rating": 4,
-      "id": "kfgYOlYJd2s"
+      "id": "kfgYOlYJd2s",
+      "deleted": false
     },
     {
       "title": "A Game of Thrones",
@@ -2045,7 +1169,7 @@
       "publisher": "Bantam Books",
       "category": "Fantasy",
       "price": 599,
-      "stock": 22,
+      "stock": 162,
       "isbn": "9780553593716",
       "pages": 694,
       "language": "English",
@@ -2061,34 +1185,7 @@
       "rating": 4.6,
       "id": "K75AxzT1lBI",
       "reviewCount": 10800,
-      "images": [
-        "https://covers.openlibrary.org/b/isbn/9780553593716-L.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780553593716-M.jpg",
-        "https://covers.openlibrary.org/b/isbn/9780553593716-S.jpg"
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "Aarav",
-          "rating": 4.7,
-          "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-          "sample": true
-        },
-        {
-          "id": 2,
-          "name": "Meera",
-          "rating": 4.6,
-          "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-          "sample": true
-        },
-        {
-          "id": 3,
-          "name": "Rahul",
-          "rating": 4.5,
-          "comment": "The book delivers a strong central idea and gives plenty to think about.",
-          "sample": true
-        }
-      ]
+      "deleted": false
     }
   ],
   "orders": [
@@ -2382,6 +1479,46 @@
       "total": 598,
       "status": "deliverd",
       "orderAt": "2026-08-17T04:28:25.137Z"
+    },
+    {
+      "id": "DlbrVO7HvTE",
+      "userId": "3FdEmS_AO8E",
+      "name": "YHTGVRFDSA",
+      "email": "ashik2@gmail.com",
+      "items": [
+        {
+          "id": "1",
+          "title": "Atomic Habits",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+        },
+        {
+          "id": "2",
+          "title": "The Alchemist",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+        },
+        {
+          "id": "4",
+          "title": "Rich Dad Poor Dad",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781612681139-L.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1786940875446,
+        "fullName": "Murali PK",
+        "address": "Patterkandiyil(ho),",
+        "city": "Nadapuram",
+        "pincode": "673504",
+        "phone": "7012613984"
+      },
+      "PaymentMethod": "cod",
+      "subtotal": 1328,
+      "delivery": 0,
+      "total": 1328,
+      "status": "deliverd",
+      "orderAt": "2026-08-18T06:34:27.984Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

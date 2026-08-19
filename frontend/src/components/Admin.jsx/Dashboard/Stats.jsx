@@ -5,13 +5,19 @@ import { GoPeople } from "react-icons/go";
 import { HiOutlineCurrencyRupee } from "react-icons/hi2";
 import { CgNotes } from "react-icons/cg";
 import { useSelector } from 'react-redux';
-
+import { useUsers } from '../../../hooks/useUsers';
+import { useBooks } from '../../../hooks/useBooks';
 
 
 function Stats() {
     
     const orders = useSelector(state=>state.orders.items);
-    
+    const {data:users, isLoading , error } = useUsers();
+    const {data:books , isLoading:bookLoading  }  = useBooks();
+    if(isLoading) return <h1>Loading ...    </h1>
+    if(bookLoading) return <h1>Loading ...    </h1>
+    console.log(users)
+    console.log(books)
   return (
         <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-4 p-3'>
 
@@ -22,7 +28,7 @@ function Stats() {
                 </div>
                 <div className='flex flex-col'>
                     <span className='text-sm text-[#374151]'>Total Books</span>
-                    <span className='text-[#111827] text-xl font-medium'>1245</span>
+                    <span className='text-[#111827] text-xl font-medium'>{books.length}</span>
                 </div>
             </div>
 
@@ -44,7 +50,7 @@ function Stats() {
                 </div>
                 <div className='flex flex-col'>
                     <span className='text-sm text-[#374151]'>Total Users</span>
-                    <span className='text-[#111827] text-xl font-medium'>1245</span>
+                    <span className='text-[#111827] text-xl font-medium'>{users.length}</span>
                 </div>
             </div>
 
@@ -72,13 +78,12 @@ function Stats() {
                 <div className='flex flex-col'>
                     <span className='text-sm text-[#374151]'>Pending Orders</span>
                     <span className='text-[#111827] text-xl font-medium'>
-                        {
-                            orders 
-                                ?orders.reduce((total , item)=>{
+
+                        {       orders.reduce((total , item)=>{
                                     if(item.status === "pending"){
                                         return total+=1
                                     }
-                                },0):0
+                                },0) || 0
                         }
                     </span>
                 </div>

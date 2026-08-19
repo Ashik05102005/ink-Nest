@@ -14,6 +14,7 @@ import { useUpdateBooks } from '../../hooks/Admin/useUpadteBooks';
 
 
 function Books() {
+  const [page , setPage] = useState(1);
   const [search , setSearch] =useState('')
   const [category, setCategory] = useState("All Categories");
   const [status , setStatus] = useState("all");
@@ -29,6 +30,7 @@ function Books() {
   
   //filtered books 
   const filteredBooks = useMemo(()=>{
+    setPage(1)
     if(books){
       // 
     let result =[...books]
@@ -147,8 +149,12 @@ function Books() {
     
   }
   
-
+  
   if(isLoading) return <h1>Loading..</h1>
+  const limit = 8 ;
+  const startingindex =( page-1 )* limit;
+  const endingIndex = page*limit;
+  const totalpages = Math.ceil((filteredBooks.length)/limit);
   // console.log(books)
 
 
@@ -187,13 +193,24 @@ function Books() {
           </button>
         </div>
       </div>
-        <BookList books={filteredBooks} onEdit={handleEditBook}/>
+        <BookList books={filteredBooks.filter(book=> !book.deleted ? book:null).slice(startingindex,startingindex+limit)} onEdit={handleEditBook}/>
         <BookForm  
           showModal={showModal} 
           handleClose={handleClose}
           onSubmit ={handleSubmit}
           book={selectedBooks}
           isLoading={addBooks.isPending || updateBookMutation.isPending}/>
+        <div className=' min-h-10 mt-3 flex justify-end px-4 '>
+          <button className='border px-4 border-gray-300 rounded-l text-[#1D7A46] disabled:text-gray-400'
+                  disabled={page===1}
+                  onClick={()=>setPage(page=>page-1)}
+                  >Previous</button>
+          <span className='border px-4 border-gray-300 flex items-center '>{page}</span>
+          <button 
+          disabled={page===totalpages}
+          onClick={()=>setPage(page=>page+1)}
+          className='border px-4 border-gray-300 rounded-r text-[#1D7A46] disabled:text-gray-400'>Next</button>
+      </div>
     </div>
   )
 }

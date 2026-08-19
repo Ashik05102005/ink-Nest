@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import UsersStats from '../../components/Admin.jsx/users/UsersStats'
 import { LuSearch } from 'react-icons/lu'
 import UserFilterByStatus from '../../components/Admin.jsx/users/UserFilterByStatus'
@@ -10,6 +10,7 @@ import UsersList from '../../components/Admin.jsx/users/UsersList'
 import { useMutateUser } from '../../hooks/Admin/useMutateUser'
 
 function Users() {
+  const [page , setPage] = useState(1);
   const [statusFilter , setStatusFilter] = useState('all')
   const [roleFilter , setRoleFilter] = useState('all')
   const [sortBy , setSortBy ] = useState("newest");
@@ -18,6 +19,10 @@ function Users() {
   const {data:users, isLoading , error } = useUsers();
   
   const mutateUser = useMutateUser();
+
+  useEffect(()=>{
+    setPage(1)
+  },[search , statusFilter , roleFilter])
   
   if(isLoading) return<h1>Loading...</h1>
 
@@ -75,7 +80,13 @@ function Users() {
   }
   })
 
-  console.log(search)
+  
+
+  const limit = 5 ;
+  const startingindex =( page-1 )* limit;
+  const endingIndex = page*limit;
+  const totalpages = Math.ceil((sortedUsers.length)/limit);
+  // console.log(search)
   return (
     <div className='p-3'>
       <UsersStats  users={users}/>
@@ -99,6 +110,17 @@ function Users() {
       </div>
       <div className='mt-5'>
         <UsersList users={sortedUsers} onToggleBlock={onToggleBlock} onRoleChange={onRoleChange}/>
+        <div className=' min-h-10 mt-3 flex justify-end px-4 '>
+          <button className='border px-4 border-gray-300 rounded-l text-[#1D7A46] disabled:text-gray-400'
+                  disabled={page===1}
+                  onClick={()=>setPage(page=>page-1)}
+                  >Previous</button>
+          <span className='border px-4 border-gray-300 flex items-center '>{page}</span>
+          <button 
+          disabled={page===totalpages}
+          onClick={()=>setPage(page=>page+1)}
+          className='border px-4 border-gray-300 rounded-r text-[#1D7A46] disabled:text-gray-400'>Next</button>
+      </div>
       </div>
     </div>
   )

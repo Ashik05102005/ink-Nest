@@ -6,8 +6,20 @@ import {
   FiPlus,
   FiSearch,
 } from "react-icons/fi";
+import { useDeleteBooks } from "../../../hooks/Admin/useDeleteBooks";
+import { toast } from "sonner";
 
 function BookList({books , onEdit}) {
+  const mutateDelete = useDeleteBooks()
+  const handleDelete = (book)=>{
+    mutateDelete.mutate(
+      book.id,
+      {onSuccess : (data)=>{
+        toast.error(`"${book.title}" is deleted`)
+      }
+    }
+    )
+  }
   return (
     <div>
          <div className="hidden overflow-x-auto md:block">
@@ -189,7 +201,7 @@ function BookList({books , onEdit}) {
                     <div className="flex items-center gap-3">
 
                       <button
-                        onClick={() => onEdit?.(book)}
+                        onClick={() => onEdit(book)}
                         className="
                           flex h-8 w-8 items-center justify-center
                           rounded-md border border-gray-200
@@ -201,7 +213,7 @@ function BookList({books , onEdit}) {
                       </button>
 
                       <button
-                        // onClick={() => onDelete?.(book)}
+                        onClick={() => handleDelete(book)}
                         className="
                           flex h-8 w-8 items-center justify-center
                           rounded-md border border-gray-200

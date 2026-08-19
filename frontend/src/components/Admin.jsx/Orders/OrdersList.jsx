@@ -255,7 +255,7 @@ function OrdersList({orders=[] , onStatusChange}) {
                     {/* Edit */}
 
                    <select 
-                   onChange={(e)=>onStatusChange(order.id ,e.target.value )}
+                   onChange={(e)=>onStatusChange(order ,e.target.value )}
                    className='border px-4 py-2 rounded-md border-gray-200 shadow text-gray-600'
                    value={order.status}>
                     <option value="pending">Pending</option>

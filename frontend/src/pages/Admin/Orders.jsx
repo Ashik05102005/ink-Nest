@@ -1,4 +1,4 @@
-import React,{use, useState} from 'react'
+import React,{use, useEffect, useState} from 'react'
 import Navbar from '../../components/Admin.jsx/Navbar'
 import OrderStats from '../../components/Admin.jsx/Orders/OrderStats'
 import { CiSearch } from "react-icons/ci";
@@ -11,6 +11,7 @@ import { useMutateOrder } from '../../hooks/Admin/useMutateOrder';
 
 
 function AdminOrders() {
+  const [page , setPage] = useState(2)
   const [serach, setSearch ] = useState('');
   const [statusFilter,setStatusFilter] = useState('all');
   const [paymentFilter , setPaymentFilter] = useState('all');
@@ -20,13 +21,16 @@ function AdminOrders() {
 
   const mutateOrder = useMutateOrder();
 
+  useEffect(()=>{
+    setPage(1)
+  },[serach,statusFilter,paymentFilter])
+
   if(isLoading) return <h1>Loading...</h1>;
 
   const filteredorders = orders.filter((order)=>{
-    const customerName = order?.shippingAddress?.name || "";
-    const customerEmail = order?.shippingAddress?.email || "";
+    const customerName = order?.name || "";
+    const customerEmail = order?.email || "";
     const orderId = order.id || "";
-
     //search
     const searchmatch = 
             customerName.toLowerCase().includes(serach.toLowerCase()) ||
@@ -66,13 +70,17 @@ function AdminOrders() {
       }
   })
 
-  const onStatusChange =(id,status)=>{
+  const onStatusChange =(order,status)=>{
     mutateOrder.mutate({
-      id:id , 
-      data : {status:status}
+      id:order.id , 
+      status : status ,
+      userId : order.userId
     })
   }
-
+  const limit = 5 ;
+  const startingindex =( page-1 )* limit;
+  const endingIndex = page*limit;
+  const totalpages = Math.ceil((sortedOrders.length)/limit);
 
   console.log(paymentFilter)
   return (
@@ -103,7 +111,18 @@ function AdminOrders() {
         </div>
 
       </div>
-      <OrdersList orders={sortedOrders} onStatusChange={onStatusChange} />
+      <OrdersList orders={sortedOrders.slice(startingindex , endingIndex)} onStatusChange={onStatusChange} />
+      <div className=' min-h-10 mt-3 flex justify-end px-4 '>
+          <button className='border px-4 border-gray-300 rounded-l text-[#1D7A46] disabled:text-gray-400'
+                  disabled={page===1}
+                  onClick={()=>setPage(page=>page-1)}
+                  >Previous</button>
+          <span className='border px-4 border-gray-300 flex items-center '>{page}</span>
+          <button 
+          disabled={page===totalpages}
+          onClick={()=>setPage(page=>page+1)}
+          className='border px-4 border-gray-300 rounded-r text-[#1D7A46] disabled:text-gray-400'>Next</button>
+      </div>
 
     </div>
   )

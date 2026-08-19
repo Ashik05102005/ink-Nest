@@ -37,7 +37,11 @@ function LoginComponent({ isLogin, setIsLogin }) {
     console.log(user)
     if(user.length>0)
     {
-      if(user[0].password===input.password){
+      if(user[0].status==="blocked"){
+        toast.error("Blocked User!" , {duration : 2000});
+        return;
+      }
+      else if(user[0].password===input.password){
         toast.success("Welcome back!" , {duration : 2000});
         localStorage.setItem("userId",JSON.stringify(user[0].id))
         navigate('/')
