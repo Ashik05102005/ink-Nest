@@ -39,12 +39,18 @@ function LoginComponent({ isLogin, setIsLogin }) {
     {
       if(user[0].status==="blocked"){
         toast.error("Blocked User!" , {duration : 2000});
+        setInput(INITIALVALUE)
         return;
       }
       else if(user[0].password===input.password){
         toast.success("Welcome back!" , {duration : 2000});
         localStorage.setItem("userId",JSON.stringify(user[0].id))
-        navigate('/')
+        localStorage.setItem("userRole" , JSON.stringify(user[0].role))
+        if (user[0].role === "admin") {
+          navigate("/admin");
+        } else {
+          navigate("/");
+        }
       }
       else{
          toast.error("Invalid  Password" , {duration : 2000});
@@ -73,6 +79,7 @@ function LoginComponent({ isLogin, setIsLogin }) {
             >Email Address</label>
             <div className='w-full relative'>
               <input
+                value={input.email}
                 type='text'
                 placeholder='Enter Your Email'
                 onChange={(e) => setInput(prev => ({ ...prev, email: e.target.value }))}
@@ -88,6 +95,7 @@ function LoginComponent({ isLogin, setIsLogin }) {
               >Password</label>
             <div className='w-full relative ' >
               <input
+                value={input.password}
                 type='text'
                 placeholder='Enter your password'
                 onChange={(e) => setInput(prev => ({ ...prev, password: e.target.value }))}

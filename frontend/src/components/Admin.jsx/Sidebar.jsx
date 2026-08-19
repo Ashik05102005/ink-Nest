@@ -1,13 +1,20 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FaHome, FaBook, FaShoppingBag, FaUsers } from "react-icons/fa";
 import { IoIosLogOut } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import { toast } from 'sonner';
 
 
 
-
-function Sidebar() {
+function Sidebar({userData}) {
+  const navigate = useNavigate()
+  const handleLogout = ()=>{
+    localStorage.removeItem("userId")
+    localStorage.removeItem("userRole");
+    toast.warning("Logout Sucessfull")
+    navigate('/login')
+  }
   return ( 
     <aside className="w-64  md:flex hidden flex-col justify-between min-h-screen bg-[#004D3B] text-white fixed ">
       <nav className="p-4 space-y-2">
@@ -19,6 +26,7 @@ function Sidebar() {
 
         <NavLink
           to="/admin"
+          end
           className={({ isActive }) =>
             `flex items-center gap-3 px-4 py-3 rounded-lg ${
               isActive
@@ -94,13 +102,16 @@ function Sidebar() {
 
       <div className='flex flex-col gap-2 p-4'>
             <div className=' p-2 flex items-center gap-2 rounded-md bg-white/10 shadow'>
-                <div className='border w-8 h-8 flex items-center justify-center rounded-full'>A</div>
+                <div className='border w-8 h-8 flex items-center justify-center rounded-full'>
+                  {userData.name.trim().slice(0,1).toUpperCase()}
+                </div>
                 <div >
-                    <h1>Admin</h1>
-                    <h1 className='text-sm *:'>admin@gmail.com</h1>
+                    <h1>{userData.name}</h1>
+                    <h1 className='text-sm '>{userData.email}</h1>
                 </div>
             </div>
             <button
+            onClick={handleLogout}
             className='flex gap-2 items-center  w-full py-2 px-2 rounded-md bg-white/10  shadow'
             >
                 <IoIosLogOut />

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useBooks } from '../../../hooks/useBooks'
+import { Link } from 'react-router-dom'
 
 function LowStock() {
     const {data:books , isLoading , error}  = useBooks()
@@ -19,9 +20,11 @@ function LowStock() {
                 Low Stock Books
                 </h1>
 
-                <button className="text-sm font-medium text-[#1D7A46] hover:text-[#145C34]">
+                <Link 
+                to={'books'}
+                className="text-sm font-medium text-[#1D7A46] hover:text-[#145C34]">
                 View all
-                </button>
+                </Link>
 
             </div>
 

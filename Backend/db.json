@@ -5,8 +5,57 @@
       "email": "lllashik2@gmail.com",
       "password": "ashik123",
       "confirm": "ashik123",
-      "cart": [],
-      "wishlist": [],
+      "cart": [
+        {
+          "title": "The First Season",
+          "author": "Viren D’silva",
+          "publisher": "Current Books",
+          "category": "Fiction",
+          "price": 299,
+          "stock": 27,
+          "isbn": "9789376913619",
+          "pages": 268,
+          "language": "Malayalam",
+          "format": "Paperback",
+          "image": "https://dcbookstore.com/dc-admin/resources/files/uploads/product/images/1785840954_6a71c53aa2bf3.jpeg",
+          "description": "The First Season is a behind-the-scenes memoir of the birth of the Indian Super League and the Kerala Blasters, told through Viren D’Silva’s personal journey in Indian sports. Blending football, business, ambition and memory, the book offers an insider’s account of the people, challenges and decisions that shaped one of Indian football’s most significant sporting stories.",
+          "releaseDate": "2026-08-09",
+          "edition": "",
+          "dimensions": "",
+          "previewUrl": "",
+          "featured": false,
+          "trending": false,
+          "rating": 4,
+          "id": "kfgYOlYJd2s",
+          "deleted": false,
+          "quantity": 1
+        }
+      ],
+      "wishlist": [
+        {
+          "title": "Poonachi :Adhava Oru Vellatinte Katha",
+          "author": "Perumal Murukan",
+          "publisher": "DC Books",
+          "category": "Self Help",
+          "price": 207,
+          "stock": 113,
+          "isbn": " 9788169853880",
+          "pages": 178,
+          "language": "Malayalam",
+          "format": "Paperback",
+          "image": "https://dcbookstore.com/dc-admin/resources/files/uploads/product/images/1786165232_6a76b7f053dc7.jpg",
+          "description": "അടിച്ചമർത്തലും അനീതിയും നിറഞ്ഞ ഒരു സാങ്കല്പ്‌പിക സമൂഹത്തെ ആവിഷ്കരിക്കുന്ന ആഖ്യാനശൈലിയുള്ള നോവലാണ് പൂനാച്ചി. ഒരു കറുത്ത ആടിൻ്റെ ജീവിതത്തിലൂടെ എഴുത്തുകാരൻ മനുഷ്യഹൃദയത്തെ സ്‌പർശിക്കുന്ന വികാരങ്ങൾ അതിസൂക്ഷ്മമായി ആവിഷ്കരിക്കുന്നു. ദരിദ്രമായ ഒരു കുടുംബത്തിന്റെ ദൈനംദിന ജീവിതവുമായി ബന്ധപ്പെട്ടുകഴിയുന്ന ആ ചെറിയ ജീവിയുടെ നിസ്സഹായതയും പോരാട്ടങ്ങളും നിഷ്കളങ്കതയും അദ്ദേഹം ഹൃദയസ്‌പർശിയായി ചിത്രീകരിക്കുന്നു. ഗ്രാമീണജീവിതത്തിലെ അതിജീവനത്തിൻ്റെ സൂക്ഷ്‌മതകളാണ് പൂനാച്ചിയുടെ ആത്മാവ്. വർഗ്ഗവ്യവസ്ഥയെയും സാമൂഹികനീതിയെയും കുറിച്ച് വായനക്കാരൻ്റെ മനസ്സിൽ ആത്മപരിശോധനയ്ക്കും ഗൗരവമായ ചിന്തയ്ക്കും വഴിയൊരുക്കുന്ന ശ്രദ്ധേയമായ ഒരു കൃതി.",
+          "releaseDate": "2026-07-31",
+          "edition": "",
+          "dimensions": "",
+          "previewUrl": "",
+          "featured": false,
+          "trending": false,
+          "rating": 4.5,
+          "id": "wBvD-6lI3Ws",
+          "deleted": false
+        }
+      ],
       "orders": [],
       "address": [],
       "role": "admin",
@@ -110,7 +159,7 @@
           "subtotal": 1178,
           "delivery": 0,
           "total": 1178,
-          "status": "pending",
+          "status": "shipped",
           "orderAt": "2026-08-16T09:12:24.104Z"
         },
         {
@@ -144,7 +193,7 @@
           "subtotal": 879,
           "delivery": 0,
           "total": 879,
-          "status": "pending",
+          "status": "deliverd",
           "orderAt": "2026-08-16T09:52:35.224Z"
         }
       ],
@@ -282,7 +331,83 @@
           "delivery": 0,
           "total": 1328,
           "orderAt": "2026-08-18T06:34:27.984Z",
-          "status": "deliverd"
+          "status": "processing"
+        },
+        {
+          "id": "rOIx-lw87NQ",
+          "userId": "3FdEmS_AO8E",
+          "name": "YHTGVRFDSA",
+          "email": "ashik2@gmail.com",
+          "items": [
+            {
+              "id": "wBvD-6lI3Ws",
+              "title": "Poonachi :Adhava Oru Vellatinte Katha",
+              "quantity": 1,
+              "image": "https://dcbookstore.com/dc-admin/resources/files/uploads/product/images/1786165232_6a76b7f053dc7.jpg"
+            },
+            {
+              "id": "12",
+              "title": "Do Epic Shit",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9789391165482-L.jpg"
+            },
+            {
+              "id": "5",
+              "title": "The Psychology of Money",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
+            },
+            {
+              "id": "25",
+              "title": "The Midnight Library",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg"
+            },
+            {
+              "id": "13",
+              "title": "The Mountain Is You",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg"
+            },
+            {
+              "id": "6",
+              "title": "Think and Grow Rich",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg"
+            },
+            {
+              "id": "33",
+              "title": "Eloquent JavaScript",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg"
+            },
+            {
+              "id": "30",
+              "title": "Sapiens",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+            },
+            {
+              "id": "32",
+              "title": "Clean Code",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+            }
+          ],
+          "shippingAddress": {
+            "id": 1786940875446,
+            "fullName": "Murali PK",
+            "address": "Patterkandiyil(ho),",
+            "city": "Nadapuram",
+            "pincode": "673504",
+            "phone": "7012613984"
+          },
+          "PaymentMethod": "cod",
+          "subtotal": 3520,
+          "delivery": 0,
+          "total": 3520,
+          "status": "processing",
+          "orderAt": "2026-08-19T06:25:01.822Z"
         }
       ],
       "address": [
@@ -298,6 +423,82 @@
       "role": "user",
       "status": "active",
       "id": "3FdEmS_AO8E"
+    },
+    {
+      "name": "ashik111",
+      "email": "ashik11@gmail.com",
+      "password": "ashik123",
+      "confirm": "ashik123",
+      "cart": [],
+      "wishlist": [],
+      "orders": [
+        {
+          "id": "wx26UtKrrT8",
+          "userId": "feL9MjYUcSk",
+          "name": "ashik111",
+          "email": "ashik11@gmail.com",
+          "items": [
+            {
+              "id": "3",
+              "title": "Ikigai",
+              "quantity": 3,
+              "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
+            },
+            {
+              "id": "2",
+              "title": "The Alchemist",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+            },
+            {
+              "id": "1",
+              "title": "Atomic Habits...",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+            }
+          ],
+          "shippingAddress": {
+            "id": 1787118871813,
+            "fullName": "PatterKandiyil",
+            "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+            "city": "Nadapuram",
+            "pincode": "673504",
+            "phone": "7012613984"
+          },
+          "PaymentMethod": "cod",
+          "subtotal": 2045,
+          "delivery": 0,
+          "total": 2045,
+          "status": "deliverd",
+          "orderAt": "2026-08-19T05:55:26.100Z"
+        }
+      ],
+      "address": [
+        {
+          "id": 1787118871813,
+          "fullName": "PatterKandiyil",
+          "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+          "city": "Nadapuram",
+          "pincode": "673504",
+          "phone": "7012613984"
+        }
+      ],
+      "role": "user",
+      "status": "active",
+      "id": "feL9MjYUcSk"
+    },
+    {
+      "name": "karthik",
+      "email": "karthik@gmail.com",
+      "password": "karthik123",
+      "confirm": "karthik123",
+      "cart": [],
+      "wishlist": [],
+      "orders": [],
+      "address": [],
+      "role": "user",
+      "status": "active",
+      "id": "xt4hL0TYYF8"
     }
   ],
   "books": [
@@ -1190,149 +1391,6 @@
   ],
   "orders": [
     {
-      "id": "kMtsw4AFuQ0",
-      "userId": "uolM7nmNmro",
-      "items": [
-        {
-          "id": "2",
-          "title": "The Alchemist",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
-        },
-        {
-          "id": "3",
-          "title": "Ikigai",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
-        }
-      ],
-      "shippingAddress": {
-        "id": 1786820502771,
-        "fullName": "PatterKandiyil",
-        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
-        "city": "Nadapuram",
-        "pincode": "673504",
-        "phone": "7012613984"
-      },
-      "PaymentMethod": "cod",
-      "subtotal": 698,
-      "delivery": 0,
-      "total": 698,
-      "status": "deliverd",
-      "orderAt": "2026-08-15T19:01:52.062Z"
-    },
-    {
-      "id": "69Sn4UucDwc",
-      "userId": "uolM7nmNmro",
-      "items": [
-        {
-          "id": "2",
-          "title": "The Alchemist",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
-        },
-        {
-          "id": "3",
-          "title": "Ikigai",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
-        }
-      ],
-      "shippingAddress": {
-        "id": 1786820502771,
-        "fullName": "PatterKandiyil",
-        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
-        "city": "Nadapuram",
-        "pincode": "673504",
-        "phone": "7012613984"
-      },
-      "PaymentMethod": "online",
-      "subtotal": 698,
-      "delivery": 0,
-      "total": 698,
-      "status": "processing",
-      "orderAt": "2026-08-15T19:06:20.936Z"
-    },
-    {
-      "id": "Bbd7q2bk9bE",
-      "userId": "uolM7nmNmro",
-      "name": "ashik123",
-      "email": "lllashik5@gmail.com",
-      "items": [
-        {
-          "id": "5",
-          "title": "The Psychology of Money",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
-        },
-        {
-          "id": "7",
-          "title": "Deep Work",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg"
-        }
-      ],
-      "shippingAddress": {
-        "id": 1786820502771,
-        "fullName": "PatterKandiyil",
-        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
-        "city": "Nadapuram",
-        "pincode": "673504",
-        "phone": "7012613984"
-      },
-      "PaymentMethod": "cod",
-      "subtotal": 769,
-      "delivery": 0,
-      "total": 769,
-      "status": "pending",
-      "orderAt": "2026-08-15T19:14:43.800Z"
-    },
-    {
-      "id": "LwgTXI3vGXA",
-      "userId": "DtcctsCPJAA",
-      "name": "ashik05",
-      "email": "lllashik2@gmail.com",
-      "items": [
-        {
-          "id": "2",
-          "title": "The Alchemist",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
-        },
-        {
-          "id": "3",
-          "title": "Ikigai",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
-        },
-        {
-          "id": "4",
-          "title": "Rich Dad Poor Dad",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9781612681139-L.jpg"
-        },
-        {
-          "id": "5",
-          "title": "The Psychology of Money",
-          "quantity": 1,
-          "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
-        }
-      ],
-      "shippingAddress": {
-        "fullName": "Ashik",
-        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
-        "city": "Nadapuram",
-        "pincode": "673504",
-        "phone": "7012613984"
-      },
-      "PaymentMethod": "cod",
-      "subtotal": 1498,
-      "delivery": 0,
-      "total": 1498,
-      "status": "shipped",
-      "orderAt": "2026-08-16T08:00:16.561Z"
-    },
-    {
       "id": "7c4N1OUd9_U",
       "userId": "x0dQFu-qKU4",
       "name": "ashik055",
@@ -1369,7 +1427,7 @@
       "subtotal": 1178,
       "delivery": 0,
       "total": 1178,
-      "status": "deliverd",
+      "status": "shipped",
       "orderAt": "2026-08-16T09:12:24.104Z"
     },
     {
@@ -1517,8 +1575,124 @@
       "subtotal": 1328,
       "delivery": 0,
       "total": 1328,
-      "status": "deliverd",
+      "status": "processing",
       "orderAt": "2026-08-18T06:34:27.984Z"
+    },
+    {
+      "id": "wx26UtKrrT8",
+      "userId": "feL9MjYUcSk",
+      "name": "ashik111",
+      "email": "ashik11@gmail.com",
+      "items": [
+        {
+          "id": "3",
+          "title": "Ikigai",
+          "quantity": 3,
+          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
+        },
+        {
+          "id": "2",
+          "title": "The Alchemist",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+        },
+        {
+          "id": "1",
+          "title": "Atomic Habits...",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1787118871813,
+        "fullName": "PatterKandiyil",
+        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+        "city": "Nadapuram",
+        "pincode": "673504",
+        "phone": "7012613984"
+      },
+      "PaymentMethod": "cod",
+      "subtotal": 2045,
+      "delivery": 0,
+      "total": 2045,
+      "status": "deliverd",
+      "orderAt": "2026-08-19T05:55:26.100Z"
+    },
+    {
+      "id": "rOIx-lw87NQ",
+      "userId": "3FdEmS_AO8E",
+      "name": "YHTGVRFDSA",
+      "email": "ashik2@gmail.com",
+      "items": [
+        {
+          "id": "wBvD-6lI3Ws",
+          "title": "Poonachi :Adhava Oru Vellatinte Katha",
+          "quantity": 1,
+          "image": "https://dcbookstore.com/dc-admin/resources/files/uploads/product/images/1786165232_6a76b7f053dc7.jpg"
+        },
+        {
+          "id": "12",
+          "title": "Do Epic Shit",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9789391165482-L.jpg"
+        },
+        {
+          "id": "5",
+          "title": "The Psychology of Money",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
+        },
+        {
+          "id": "25",
+          "title": "The Midnight Library",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg"
+        },
+        {
+          "id": "13",
+          "title": "The Mountain Is You",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg"
+        },
+        {
+          "id": "6",
+          "title": "Think and Grow Rich",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg"
+        },
+        {
+          "id": "33",
+          "title": "Eloquent JavaScript",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg"
+        },
+        {
+          "id": "30",
+          "title": "Sapiens",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+        },
+        {
+          "id": "32",
+          "title": "Clean Code",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1786940875446,
+        "fullName": "Murali PK",
+        "address": "Patterkandiyil(ho),",
+        "city": "Nadapuram",
+        "pincode": "673504",
+        "phone": "7012613984"
+      },
+      "PaymentMethod": "cod",
+      "subtotal": 3520,
+      "delivery": 0,
+      "total": 3520,
+      "status": "processing",
+      "orderAt": "2026-08-19T06:25:01.822Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

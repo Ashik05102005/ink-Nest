@@ -27,7 +27,7 @@ function CategoryPieChart({ data }) {
                 Books by Category
             </h2>
 
-            <div className="h-[300px]">
+            <div className="h-75">
                 <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
                         <Pie

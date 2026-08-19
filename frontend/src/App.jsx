@@ -27,16 +27,16 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/wishlist" element={<ProtectedRoute><Wishlist /></ProtectedRoute>}/>
-            <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
+            <Route path="/wishlist" element={<ProtectedRoute allowedRoute="user"><Wishlist /></ProtectedRoute>}/>
+            <Route path="/cart" element={<ProtectedRoute allowedRoute="user"><Cart /></ProtectedRoute>} />
             <Route path="/products" element={<Products />} />
             <Route path='/books/:id' element={<ProductView />} />
-            <Route path="/checkout" element={<ProtectedRoute><CheckOut /></ProtectedRoute>} />
-            <Route path="/confirm/:id" element={<ProtectedRoute ><Confirm /></ProtectedRoute>} />
-            <Route path="/orders" element={<ProtectedRoute><Orders /></ProtectedRoute>} />
+            <Route path="/checkout" element={<ProtectedRoute allowedRoute="user"><CheckOut /></ProtectedRoute>} />
+            <Route path="/confirm/:id" element={<ProtectedRoute  allowedRoute="user"><Confirm /></ProtectedRoute>} />
+            <Route path="/orders" element={<ProtectedRoute allowedRoute="user"><Orders /></ProtectedRoute>} />
 
 
-            <Route path="/admin" element={<Admin />}>
+            <Route path="/admin" element={<Admin allowedRoute="admin"/>}>
 
               <Route index element={<DashBoard />} />
 

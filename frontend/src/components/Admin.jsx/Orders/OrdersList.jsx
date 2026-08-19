@@ -107,13 +107,13 @@ function OrdersList({orders=[] , onStatusChange}) {
 
                 <td className="px-5 py-4">
 
-                  <div className="flex items-center gap-3">
+                  <div className="flex  flex-col justify-center  gap-3">
+                    <div className='flex'>
+                      {/* Book image */}
 
-                    {/* Book image */}
-
-                    <img
-                      src={order.items?.[0]?.image}
-                      alt={order.items?.[0]?.title}
+                      { order?.items?.map((item)=>(<img
+                      src={item?.image}
+                      alt={item?.title}
                       className="
                         h-10
                         w-8
@@ -122,22 +122,16 @@ function OrdersList({orders=[] , onStatusChange}) {
                         border
                         border-gray-100
                       "
-                    />
+                    />) )}
+                    </div>
+                    
+
+                    
 
 
                     <div>
-
-                      <p className="
-                        max-w-[160px]
-                        truncate
-                        font-medium
-                        text-gray-800
-                      ">
-                        {order.items?.[0]?.title || "-"}
-                      </p>
-
                       <p className="text-xs text-gray-500">
-                        Qty: {order.items?.[0]?.quantity || 1}
+                        Items : {order.items.length || 1}
                       </p>
 
                     </div>

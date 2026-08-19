@@ -12,6 +12,8 @@ import { useDispatch } from 'react-redux'
 import { setCurrentUser } from '../../redux/slices/currentUserSlice'
 import { setWishlist } from '../../redux/slices/wishlistSlice'
 import { setCart } from '../../redux/slices/CartSlice'
+import FadeUp from '../../Animation/FadeUp'
+
 
 function Home() {
   const dispatch = useDispatch()
@@ -37,11 +39,21 @@ function Home() {
     <div className='  min-h-screen bg-[#F8F6F1]'>
         <NavBar />
         <Hero />
-        <MainProducts />
-        <Carousel />
-        <NewBooks />
-        <Categories />
-        <CustomerReview />
+        <FadeUp >
+          <MainProducts />
+        </FadeUp>
+        <FadeUp>
+          <Carousel />
+        </FadeUp>
+        <FadeUp>
+          <NewBooks />
+        </FadeUp>
+        <FadeUp>
+          <Categories />
+        </FadeUp>
+        <FadeUp>
+          <CustomerReview />
+        </FadeUp>
         <Footer />
     </div>
   )

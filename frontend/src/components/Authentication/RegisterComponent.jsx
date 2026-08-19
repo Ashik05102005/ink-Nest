@@ -44,6 +44,7 @@ function RegisterComponent({isLogin , setIsLogin}) {
                 onSuccess : (newUser)=>{
                 console.log(newUser);
                 localStorage.setItem("userId",JSON.stringify(newUser.data.id));
+                localStorage.setItem("userRole",JSON.stringify(newUser.data.role));
                 navigate('/')
             }
         }

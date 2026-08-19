@@ -16,6 +16,7 @@
 import React from "react";
 
 import { useOrders } from "../../../hooks/useOrders";
+import { Link } from "react-router-dom";
 
 
 
@@ -98,11 +99,12 @@ function RecentOrders() {
           Recent Orders
         </h2>
 
-        <button
+        <Link
+          to={'orders'}
           className="text-sm font-medium text-[#0F6B4F] hover:text-[#0A503B]"
         >
           View all
-        </button>
+        </Link>
       </div>
 
       {/* Table */}

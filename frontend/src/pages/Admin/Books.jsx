@@ -165,7 +165,7 @@ function Books() {
         <div className=' flex   justify-between w-full '>
           {/* search Input  */}
 
-          <div className=' relative w-full lg:max-w-[280px]'>
+          <div className=' relative w-full lg:max-w-70'>
             <input
               onChange={(e)=>setSearch(e.target.value)}
               placeholder='Search books or author'

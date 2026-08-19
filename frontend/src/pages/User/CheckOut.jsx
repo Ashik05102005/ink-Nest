@@ -143,12 +143,12 @@ function CheckOut() {
           <div className='mt-3 grid md:grid-cols-2 gap-5'>
             <div className='flex flex-col gap-3'>
               
-                  {step===1 && <CheckoutForm  selectedAddress={selectedAddress} 
+                   <CheckoutForm  selectedAddress={selectedAddress} 
                                setSelectedAddress={setSelectedAddress}
                                onContinue={()=>setStep(2)}/>
-                  }
-                  {step===2&&
-                    <PaymentMethod payment={payment} setPayment={setPayment}/>}
+                  
+                  
+                    <PaymentMethod payment={payment} setPayment={setPayment}/>
               
                 
             </div>
