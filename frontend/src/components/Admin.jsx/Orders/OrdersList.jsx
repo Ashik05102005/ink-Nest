@@ -12,7 +12,7 @@ function OrdersList({orders=[] , onStatusChange}) {
   };
   console.log(orders)
   return (
-    <div className="w-full overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm">
+    <div className="w-full overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm ">
 
       {/* Horizontal scroll for smaller screens */}
       <div className="overflow-x-auto">

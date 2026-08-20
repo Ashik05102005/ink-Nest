@@ -18,8 +18,10 @@ function Products() {
     const {data:books , isLoading , error} = useBooks();
     if(isLoading) return<h1>Loading..</h1>
     if(error) return<h1>error..</h1>
+
+    const deletedRemoved = books.filter(item=>!item.deleted)
     
-    const filteredBooks = books.filter(book=>{
+    const filteredBooks = deletedRemoved.filter(book=>{
         //filter by category
         const categorymatch = selectedCatagory === "All" ||
                               book.category === selectedCatagory;

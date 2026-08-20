@@ -5,57 +5,8 @@
       "email": "lllashik2@gmail.com",
       "password": "ashik123",
       "confirm": "ashik123",
-      "cart": [
-        {
-          "title": "The First Season",
-          "author": "Viren D’silva",
-          "publisher": "Current Books",
-          "category": "Fiction",
-          "price": 299,
-          "stock": 27,
-          "isbn": "9789376913619",
-          "pages": 268,
-          "language": "Malayalam",
-          "format": "Paperback",
-          "image": "https://dcbookstore.com/dc-admin/resources/files/uploads/product/images/1785840954_6a71c53aa2bf3.jpeg",
-          "description": "The First Season is a behind-the-scenes memoir of the birth of the Indian Super League and the Kerala Blasters, told through Viren D’Silva’s personal journey in Indian sports. Blending football, business, ambition and memory, the book offers an insider’s account of the people, challenges and decisions that shaped one of Indian football’s most significant sporting stories.",
-          "releaseDate": "2026-08-09",
-          "edition": "",
-          "dimensions": "",
-          "previewUrl": "",
-          "featured": false,
-          "trending": false,
-          "rating": 4,
-          "id": "kfgYOlYJd2s",
-          "deleted": false,
-          "quantity": 1
-        }
-      ],
-      "wishlist": [
-        {
-          "title": "Poonachi :Adhava Oru Vellatinte Katha",
-          "author": "Perumal Murukan",
-          "publisher": "DC Books",
-          "category": "Self Help",
-          "price": 207,
-          "stock": 113,
-          "isbn": " 9788169853880",
-          "pages": 178,
-          "language": "Malayalam",
-          "format": "Paperback",
-          "image": "https://dcbookstore.com/dc-admin/resources/files/uploads/product/images/1786165232_6a76b7f053dc7.jpg",
-          "description": "അടിച്ചമർത്തലും അനീതിയും നിറഞ്ഞ ഒരു സാങ്കല്പ്‌പിക സമൂഹത്തെ ആവിഷ്കരിക്കുന്ന ആഖ്യാനശൈലിയുള്ള നോവലാണ് പൂനാച്ചി. ഒരു കറുത്ത ആടിൻ്റെ ജീവിതത്തിലൂടെ എഴുത്തുകാരൻ മനുഷ്യഹൃദയത്തെ സ്‌പർശിക്കുന്ന വികാരങ്ങൾ അതിസൂക്ഷ്മമായി ആവിഷ്കരിക്കുന്നു. ദരിദ്രമായ ഒരു കുടുംബത്തിന്റെ ദൈനംദിന ജീവിതവുമായി ബന്ധപ്പെട്ടുകഴിയുന്ന ആ ചെറിയ ജീവിയുടെ നിസ്സഹായതയും പോരാട്ടങ്ങളും നിഷ്കളങ്കതയും അദ്ദേഹം ഹൃദയസ്‌പർശിയായി ചിത്രീകരിക്കുന്നു. ഗ്രാമീണജീവിതത്തിലെ അതിജീവനത്തിൻ്റെ സൂക്ഷ്‌മതകളാണ് പൂനാച്ചിയുടെ ആത്മാവ്. വർഗ്ഗവ്യവസ്ഥയെയും സാമൂഹികനീതിയെയും കുറിച്ച് വായനക്കാരൻ്റെ മനസ്സിൽ ആത്മപരിശോധനയ്ക്കും ഗൗരവമായ ചിന്തയ്ക്കും വഴിയൊരുക്കുന്ന ശ്രദ്ധേയമായ ഒരു കൃതി.",
-          "releaseDate": "2026-07-31",
-          "edition": "",
-          "dimensions": "",
-          "previewUrl": "",
-          "featured": false,
-          "trending": false,
-          "rating": 4.5,
-          "id": "wBvD-6lI3Ws",
-          "deleted": false
-        }
-      ],
+      "cart": [],
+      "wishlist": [],
       "orders": [],
       "address": [],
       "role": "admin",
@@ -406,7 +357,7 @@
           "subtotal": 3520,
           "delivery": 0,
           "total": 3520,
-          "status": "processing",
+          "status": "shipped",
           "orderAt": "2026-08-19T06:25:01.822Z"
         }
       ],
@@ -499,6 +450,88 @@
       "role": "user",
       "status": "active",
       "id": "xt4hL0TYYF8"
+    },
+    {
+      "name": "ashik111",
+      "email": "ashik33@gmail.com",
+      "password": "ashik123",
+      "confirm": "ashik123",
+      "cart": [],
+      "wishlist": [
+        {
+          "id": "3",
+          "title": "Ikigai",
+          "author": "Héctor García",
+          "publisher": "Penguin Random House",
+          "category": "Self Help",
+          "price": 399,
+          "rating": 4.7,
+          "reviewCount": 6600,
+          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg",
+          "description": "Ikigai by Héctor García.",
+          "stock": 23,
+          "featured": true,
+          "trending": true,
+          "releaseDate": "2017-08-29",
+          "isbn": "9781786330895",
+          "pages": 208,
+          "language": "English",
+          "format": "Hardcover",
+          "edition": "Hutchinson Edition",
+          "dimensions": "20 x 13 x 2.5 cm",
+          "previewUrl": "https://books.google.com/books?vid=ISBN9781786330895",
+          "deleted": false
+        }
+      ],
+      "orders": [
+        {
+          "id": "WEZbvTFlxwI",
+          "userId": "BeUslYSJi7k",
+          "name": "ashik111",
+          "email": "ashik33@gmail.com",
+          "items": [
+            {
+              "id": "3",
+              "title": "Ikigai",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
+            },
+            {
+              "id": "2",
+              "title": "The Alchemist",
+              "quantity": 1,
+              "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+            }
+          ],
+          "shippingAddress": {
+            "id": 1787200390052,
+            "fullName": "PatterKandiyil",
+            "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+            "city": "Nadapuram",
+            "pincode": "673504",
+            "phone": "7012613984"
+          },
+          "PaymentMethod": "cod",
+          "subtotal": 798,
+          "delivery": 0,
+          "total": 798,
+          "status": "processing",
+          "orderAt": "2026-08-20T04:33:12.205Z"
+        }
+      ],
+      "address": [
+        {
+          "id": 1787200390052,
+          "fullName": "PatterKandiyil",
+          "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+          "city": "Nadapuram",
+          "pincode": "673504",
+          "phone": "7012613984"
+        }
+      ],
+      "role": "user",
+      "status": "active",
+      "id": "BeUslYSJi7k"
     }
   ],
   "books": [
@@ -537,7 +570,7 @@
       "reviewCount": 8200,
       "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
       "description": "The Alchemist by Paulo Coelho.",
-      "stock": 22,
+      "stock": 6,
       "featured": true,
       "trending": true,
       "releaseDate": "1993-05-01",
@@ -1691,8 +1724,42 @@
       "subtotal": 3520,
       "delivery": 0,
       "total": 3520,
-      "status": "processing",
+      "status": "shipped",
       "orderAt": "2026-08-19T06:25:01.822Z"
+    },
+    {
+      "id": "WEZbvTFlxwI",
+      "userId": "BeUslYSJi7k",
+      "name": "ashik111",
+      "email": "ashik33@gmail.com",
+      "items": [
+        {
+          "id": "3",
+          "title": "Ikigai",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg"
+        },
+        {
+          "id": "2",
+          "title": "The Alchemist",
+          "quantity": 1,
+          "image": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1787200390052,
+        "fullName": "PatterKandiyil",
+        "address": "Patterkandiyil(ho),\nEyyamkode(po),\nAvolam(via),\nNadapuram",
+        "city": "Nadapuram",
+        "pincode": "673504",
+        "phone": "7012613984"
+      },
+      "PaymentMethod": "cod",
+      "subtotal": 798,
+      "delivery": 0,
+      "total": 798,
+      "status": "processing",
+      "orderAt": "2026-08-20T04:33:12.205Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

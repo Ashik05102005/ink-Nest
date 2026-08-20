@@ -9,8 +9,9 @@ function NewBooks() {
     const [sortedData , setSortedData]= useState([]);
     if(isLoading)return <h1>Loading</h1>
     if(error)return <h1>Loading</h1>
-    if(data){
-        data.sort((a,b)=> new Date(b.releaseDate)-new Date(a.releaseDate));
+    const removeDeletedData = data.filter((book)=>!book.deleted)
+    if(removeDeletedData){
+        removeDeletedData.sort((a,b)=> new Date(b.releaseDate)-new Date(a.releaseDate));
     }
 
   return (
@@ -31,7 +32,7 @@ function NewBooks() {
             <p className='mt-1 text-gray-800'>The latest books just landed . Be the first to read what's new!</p>
         </div> 
         <div className='mt-3'>
-            <DisplayBooks data={data}/>
+            <DisplayBooks data={removeDeletedData}/>
         </div>
 
     </div>

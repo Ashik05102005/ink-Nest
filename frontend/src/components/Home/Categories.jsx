@@ -144,7 +144,7 @@ function Categories() {
             <button
                     key={item.id}
                     className={`flex w-fit items-center gap-2 rounded-full border px-4 py-1 transition-all duration-300 `}
-                    
+                    onClick={()=>navigate('/products')}
                   >
                     <Icon size={18} />
                     <p className='w-25'>{item.name}</p>

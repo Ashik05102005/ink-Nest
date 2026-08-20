@@ -13,12 +13,16 @@ function WishlistIcon({book}) {
   const isWishlisted = wishlist.some(item=>item.id === book.id);
   const currentUser = useSelector(state=>state.currentUser.currentUser);
   const userId = JSON.parse(localStorage.getItem("userId"));
+  const userRole = JSON.parse(localStorage.getItem("userRole"));
   const navigate = useNavigate();
   
   const handleAddWishlist = (e)=>{
     e.stopPropagation();
     if(!userId) {
       navigate('/login')
+    }
+    if(userRole==="admin"){
+      return
     }
     dispatch(addWishlist(book))
     

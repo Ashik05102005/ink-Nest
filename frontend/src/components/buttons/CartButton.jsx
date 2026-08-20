@@ -10,6 +10,7 @@ function CartButton({book}) {
   const updateCartMutation = useUpdateCart();
   const currentUser = useSelector(state=>state.currentUser.currentUser);
   const userId = JSON.parse(localStorage.getItem("userId"));
+  const userRole = JSON.parse(localStorage.getItem("userRole"));
   const navigate = useNavigate()
   // console.log(cartItems)
 
@@ -18,6 +19,9 @@ function CartButton({book}) {
     e.stopPropagation();
     if(!userId) {
       navigate('/login')
+    }
+    if(userRole==="admin"){
+      return 
     }
     const existingItem = cartItems.find(
                 item=>item.id === book.id);

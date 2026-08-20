@@ -84,7 +84,7 @@ function Sidebar({userData}) {
           Users
         </NavLink>
         
-        <NavLink
+        {/* <NavLink
           to="/"
           className={({ isActive }) =>
             `flex items-center gap-3 px-4 py-3 rounded-lg ${
@@ -96,7 +96,7 @@ function Sidebar({userData}) {
         >
           <FaUsers />
             HOME
-        </NavLink>
+        </NavLink> */}
 
       </nav>
 
