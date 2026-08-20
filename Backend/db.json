@@ -19,59 +19,7 @@
       "password": "ashik055",
       "confirm": "ashik055",
       "cart": [],
-      "wishlist": [
-        {
-          "id": "3",
-          "title": "Ikigai",
-          "author": "Héctor García",
-          "publisher": "Penguin Random House",
-          "category": "Self Help",
-          "price": 399,
-          "rating": 4.7,
-          "reviewCount": 6600,
-          "image": "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg",
-          "images": [
-            "https://covers.openlibrary.org/b/isbn/9781786330895-L.jpg",
-            "https://covers.openlibrary.org/b/isbn/9781786330895-M.jpg",
-            "https://covers.openlibrary.org/b/isbn/9781786330895-S.jpg"
-          ],
-          "description": "Ikigai by Héctor García.",
-          "stock": 23,
-          "featured": true,
-          "trending": true,
-          "releaseDate": "2017-08-29",
-          "isbn": "9781786330895",
-          "pages": 208,
-          "language": "English",
-          "format": "Hardcover",
-          "edition": "Hutchinson Edition",
-          "dimensions": "20 x 13 x 2.5 cm",
-          "previewUrl": "https://books.google.com/books?vid=ISBN9781786330895",
-          "reviews": [
-            {
-              "id": 1,
-              "name": "Aarav",
-              "rating": 4.8,
-              "comment": "A practical and enjoyable read with ideas that are easy to apply.",
-              "sample": true
-            },
-            {
-              "id": 2,
-              "name": "Meera",
-              "rating": 4.7,
-              "comment": "Clear writing and useful takeaways. Good choice for a focused reading session.",
-              "sample": true
-            },
-            {
-              "id": 3,
-              "name": "Rahul",
-              "rating": 4.6,
-              "comment": "The book delivers a strong central idea and gives plenty to think about.",
-              "sample": true
-            }
-          ]
-        }
-      ],
+      "wishlist": [],
       "orders": [
         {
           "id": "7c4N1OUd9_U",
@@ -532,6 +480,19 @@
       "role": "user",
       "status": "active",
       "id": "BeUslYSJi7k"
+    },
+    {
+      "name": "ashik11",
+      "email": "ashik122@gmail.com",
+      "password": "ashik123",
+      "confirm": "ashik123",
+      "cart": [],
+      "wishlist": [],
+      "orders": [],
+      "address": [],
+      "role": "user",
+      "status": "active",
+      "id": "0YAoifdKYg0"
     }
   ],
   "books": [

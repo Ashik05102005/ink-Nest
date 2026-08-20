@@ -16,8 +16,8 @@ function Stats() {
     const {data:books , isLoading:bookLoading  }  = useBooks();
     if(isLoading) return <h1>Loading ...    </h1>
     if(bookLoading) return <h1>Loading ...    </h1>
-    console.log(users)
-    console.log(books)
+    // console.log(users)
+    // console.log(books)
   return (
         <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-4 p-3'>
 

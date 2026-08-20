@@ -7,7 +7,7 @@ function LowStock() {
 
     if(isLoading) return <h1>Loading...</h1>
     if(error) return <h1>Error...</h1>
-    console.log(books);
+    // console.log(books);
 
     books.sort((a,b)=>a.stock - b.stock)
   return (

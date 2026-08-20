@@ -84,7 +84,7 @@ function Users() {
 
   const limit = 5 ;
   const startingindex =( page-1 )* limit;
-  const endingIndex = page*limit;
+  const endingIndex = startingindex+limit;
   const totalpages = Math.ceil((sortedUsers.length)/limit);
   // console.log(search)
   return (
@@ -109,7 +109,7 @@ function Users() {
         </div>
       </div>
       <div className='mt-5'>
-        <UsersList users={sortedUsers} onToggleBlock={onToggleBlock} onRoleChange={onRoleChange}/>
+        <UsersList users={sortedUsers.slice(startingindex,endingIndex)} onToggleBlock={onToggleBlock} onRoleChange={onRoleChange}/>
         <div className=' min-h-10 mt-3 flex justify-end px-4 '>
           <button className='border px-4 border-gray-300 rounded-l text-[#1D7A46] disabled:text-gray-400'
                   disabled={page===1}

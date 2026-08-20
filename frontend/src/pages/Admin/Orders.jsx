@@ -11,7 +11,7 @@ import { useMutateOrder } from '../../hooks/Admin/useMutateOrder';
 
 
 function AdminOrders() {
-  const [page, setPage] = useState(2)
+  const [page, setPage] = useState(1)
   const [serach, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
   const [paymentFilter, setPaymentFilter] = useState('all');
@@ -79,8 +79,8 @@ function AdminOrders() {
   }
   const limit = 5;
   const startingindex = (page - 1) * limit;
-  const endingIndex = page * limit;
-  const totalpages = Math.ceil((sortedOrders.length) / limit);
+  const endingIndex = startingindex+limit;
+  const totalpages = Math.max(1, Math.ceil(sortedOrders.length / limit))
 
   console.log(paymentFilter)
   return (
